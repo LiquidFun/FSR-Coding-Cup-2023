@@ -11,7 +11,7 @@ from pathlib import Path
 from subprocess import run
 import argparse
 
-ignore_dirs = ["scripts"]
+ignore_dirs = ["scripts", "template"]
 
 repo_path = Path(__file__).absolute().parent 
 program_tester_path = repo_path / "scripts" / "program-tester.sh"

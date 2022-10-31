@@ -56,6 +56,18 @@ def make_add_m():
     
 
 def main():
+    index = 1
+
+    sample_test_cases = [
+        ([1, 4, 6, 1, 3], [6, 4, 2, 3, 4]),
+        ([9, 0], [5, 6]),
+        ([9, 0, 1], [5, 6, 2]),
+    ]
+
+    for inputs in sample_test_cases:
+        write_test(f"{index:02}-sample", *inputs)
+        index += 1
+
     tests_to_be_created = {
         make_random: 30,
         make_all_same: 12,
@@ -63,9 +75,10 @@ def main():
     }
     
     for func, how_many in tests_to_be_created.items():
-        for i in range(1, how_many+1):
+        for _ in range(how_many):
             name = func.__name__[5:]
-            write_test(f"{i:02}-{name}", *func())
+            write_test(f"{index:02}-{name}", *func())
+            index += 1
 
     custom_test_cases = [
         ([0, 9], [9, 0]),
@@ -74,17 +87,9 @@ def main():
         ([9, 9, 0, 0], [0, 0, 8, 8]),
     ]
 
-    for i, inputs in enumerate(custom_test_cases):
-        write_test(f"{i+1:02}-edge-cases", *inputs)
-
-    sample_test_cases = [
-        ([1, 4, 6, 1, 3], [6, 4, 2, 3, 4]),
-        ([9, 0], [5, 6]),
-        ([9, 0, 1], [5, 6, 2]),
-    ]
-
-    for i, inputs in enumerate(sample_test_cases):
-        write_test(f"{i+1:02}-sample", *inputs)
+    for inputs in custom_test_cases:
+        write_test(f"{index:02}-edge-cases", *inputs)
+        index += 1
 
 
 if __name__ == "__main__":
