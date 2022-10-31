@@ -1,58 +1,7 @@
-# This is a collection of my own competitive problems (currently being gathered for the FSR Cup 2023)
-
-## Testing a solution
-
-Use the `eval-solution.py` script, it will clone the git submodule and use the program-tester.sh in the scripts folder to evaluate the solution. The first argument can be a pattern or a file path to a solution which is to be tested. If nothing is added then the most recently saved solution will be tested. (In the future this might get replaced by a custom pip module).
-
-## Creating a problem
+# FSR Cup 2023 Problems
 
 
-**To add a problem idea**: 
-
-1. Copy the following `<details>` spoiler block. 
-2. Replace `Problem Template` with the problem name, leave the `[FREE]` if you are not intending to create its files yourself. Mark it as `[/NAME/]` if you are working on it. Mark it as `[DONE]` once everything for that problem has been completed.
-
-If a problem is being worked on, additional solutions may be added without asking. Each problem should have at least 2 solutions by different people, because then easy mistakes can be found.
-
-```html
-<details> 
-  <summary>[FREE] Problem Template (click me!)</summary>
-
-  * *Preliminary problem idea*: 
-  * *Difficulty*: 
-  * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
-</details>
-```
-
-In the spoiler tag the following attributes can be found:
-
-* *Preliminary problem idea*: describe the problem description and or idea. Can be formal as well, may not be most up to date version!
-* *Difficulty*: example: 1/10, subjective difficulty of problem. 1 is "add all given numbers", 5 is around easiest dp, 10 is ICPC world final problem. Give range if solution unknown
-* *Solution idea*: describe your intended solution in a couple words or sentences, e.g.: build graph + dijkstra
-* *Missing*: a list of parts which are still missing for that problem (remove once complete)
-
-The following things are required for each problem:
-
-* _problem-text_: problem description, input format, output format (use basic latex commands, as [supported by codeforces' polygon system](https://polygon.codeforces.com/docs/statements-tex-manual?ccid=0024b28061a8a61a73208fdecd433e9e&session=6ac53d17b6402d9f6a2692326b91989a06fa6000))
-* _solution1_: main solution 
-* _solution2_: secondary solution by someone else (possibly in a different programming language)
-* _tests_: test input files ending with `.in`, usually easier to create with a generator
-* validator: a program which tests whether a test is valid according to the problem statement (e.g. `1 <= n <= 100`, no negative integers, all strings below length 50, etc.)
-* checker: a program which tests whether the solution is correct. Usually one of the pre-made ones from codeforces is enough, but this needs to be a separate program if multiple solutions are possible.
-* upload: whether the problem has been uploaded to codeforces
-
-
-**To start working on a problem:**
-
-1. Mark the problem with your name in this file.
-2. Duplicate the template folder, name it according to the problem name
-3. Add files there as you see fit, the problem statement can be added in the README.md
-
-Each solution, validator and checker should accept test cases via `stdin`, and print stuff via `stdout`. 
-
-## List of possible problem ideas (can still be modified)
-
+## List of possible problem ideas
 
 <details> 
   <summary>[Brutenis] Bicycle Lock (click me!)</summary>
@@ -135,4 +84,56 @@ Each solution, validator and checker should accept test cases via `stdin`, and p
   * *Solution idea*:
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
 </details>
+
+
+## Testing a solution
+
+Use the `eval-solution.py` script, it will clone the git submodule and use the program-tester.sh in the scripts folder to evaluate the solution. The first argument can be a pattern or a file path to a solution which is to be tested. If nothing is added then the most recently saved solution will be tested. (In the future this might get replaced by a custom pip module).
+
+## Creating a problem
+
+
+**To add a problem idea**: 
+
+1. Copy the following `<details>` spoiler block. 
+2. Replace `Problem Template` with the problem name, leave the `[FREE]` if you are not intending to create its files yourself. Mark it as `[/NAME/]` if you are working on it. Mark it as `[DONE]` once everything for that problem has been completed.
+
+If a problem is being worked on, additional solutions may be added without asking. Each problem should have at least 2 solutions by different people, because then easy mistakes can be found.
+
+```html
+<details> 
+  <summary>[FREE] Problem Template (click me!)</summary>
+
+  * *Preliminary problem idea*: 
+  * *Difficulty*: 
+  * *Solution idea*:
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+</details>
+```
+
+In the spoiler tag the following attributes can be found:
+
+* *Preliminary problem idea*: describe the problem description and or idea. Can be formal as well, may not be most up to date version!
+* *Difficulty*: example: 1/10, subjective difficulty of problem. 1 is "add all given numbers", 5 is around easiest dp, 10 is ICPC world final problem. Give range if solution unknown
+* *Solution idea*: describe your intended solution in a couple words or sentences, e.g.: build graph + dijkstra
+* *Missing*: a list of parts which are still missing for that problem (remove once complete)
+
+The following things are required for each problem:
+
+* _problem-text_: problem description, input format, output format (use basic latex commands, as [supported by codeforces' polygon system](https://polygon.codeforces.com/docs/statements-tex-manual?ccid=0024b28061a8a61a73208fdecd433e9e&session=6ac53d17b6402d9f6a2692326b91989a06fa6000))
+* _solution1_: main solution 
+* _solution2_: secondary solution by someone else (possibly in a different programming language)
+* _tests_: test input files ending with `.in`, usually easier to create with a generator
+* validator: a program which tests whether a test is valid according to the problem statement (e.g. `1 <= n <= 100`, no negative integers, all strings below length 50, etc.)
+* checker: a program which tests whether the solution is correct. Usually one of the pre-made ones from codeforces is enough, but this needs to be a separate program if multiple solutions are possible.
+* upload: whether the problem has been uploaded to codeforces
+
+
+**To start working on a problem:**
+
+1. Mark the problem with your name in this file.
+2. Duplicate the template folder, name it according to the problem name
+3. Add files there as you see fit, the problem statement can be added in the README.md
+
+Each solution, validator and checker should accept test cases via `stdin`, and print stuff via `stdout`. 
 
