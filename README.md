@@ -4,7 +4,7 @@
 ## List of possible problem ideas
 
 <details> 
-  <summary>[Brutenis] Bicycle Lock (click me!)</summary>
+  <summary>[DONE; but needs other solvers] Bicycle Lock (click me!)</summary>
 
   * *Preliminary problem idea*: your gloves are too thick for the bicycle lock. Can only turn 2 dials at once, 2-100 numbers from 0 to 9 on lock. How many steps to turn to correct solution (if possible) given start position and correct position.
   * *Difficulty*: 2/10
@@ -13,12 +13,12 @@
 </details>
 
 <details> 
-  <summary>[Brutenis] Train Scheduling (click me!)</summary>
+  <summary>[DONE; but needs other solvers] Train Scheduling (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
   * *Difficulty*: 3/10
   * *Solution idea*: make graph, traverse with dijkstra
-  * *Missing*: [**solution2**, **validator**, **checker**, **upload**]
+  * *Missing*: [**solution2**]
 </details>
 
 <details> 

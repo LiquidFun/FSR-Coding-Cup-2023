@@ -39,7 +39,7 @@ def write_test(name, graph, finish_name) -> bool:
         file.write(f"{len(graph.nodes)} {len(graph.edges)} {finish_name}\n")
         for fr, to, data in graph.edges.data():
             arrival_times = ' '.join(map(lambda s: f"{s//60:02}:{s%60:02}", data['schedule']))
-            file.write(f"{graph.nodes[fr]['name']} {graph.nodes[to]['name']} {data['travel']} {len(arrival_times)} {arrival_times}\n")
+            file.write(f"{graph.nodes[fr]['name']} {graph.nodes[to]['name']} {data['travel']} {len(data['schedule'])} {arrival_times}\n")
         print(f" | ✅ {name}.in (n={len(graph.nodes)})", end="", flush=True)
     ans_path = test_path.parent / f"{name}.ans"
     command = ' '.join(["python", str(solution_path), "<", str(test_path), ">", str(ans_path)])
@@ -115,23 +115,47 @@ def make_random(large=False):
 def make_random_large():
     return make_random(large=True)
 
+def get_sample1():
+    g = nx.DiGraph()
+    g.add_edge("rostock", "berlin", travel=129, schedule=[h*60+21 for h in range(8, 14, 2)])
+    g.add_edge("berlin", "magdeburg", travel=100, schedule=[h*60+11 for h in range(8, 14)])
+    schedule = sorted([h*60+25 for h in range(8, 13, 2)] + [h*60+68 for h in range(8, 13, 2)])
+    g.add_edge("rostock", "schwerin", travel=53, schedule=schedule)
+    g.add_edge("schwerin", "wittenberge", travel=59, schedule=[h*60 for h in range(8, 14, 2)])
+    g.add_edge("wittenberge", "magdeburg", travel=94, schedule=[h*60+70 for h in range(8, 14, 2)])
+    for node in g.nodes:
+        g.nodes[node]["name"] = node
+    return g, "magdeburg"
+
+def get_sample2():
+    g = nx.DiGraph()
+    g.add_edge("rostock", "dresden", travel=254, schedule=[h*60+21 for h in range(2, 19, 4)])
+    for node in g.nodes:
+        g.nodes[node]["name"] = node
+    return g, "dresden"
+
 def main():
+    index = 1
     tests_to_be_created = {
         make_random: 30,
         make_random_large: 30,
     }
-    
+
+    sample_test_cases = [
+        get_sample1(),
+        get_sample2(),
+    ]
+
+    for inputs in sample_test_cases:
+        write_test(f"{index:03}-sample", *inputs)
+        index += 1
+
     for func, how_many in tests_to_be_created.items():
-        for i in range(1, how_many+1):
+        for _ in range(how_many):
             name = func.__name__.replace("make_", "")
-            while not write_test(f"{i:02}-{name}", *func()):
+            while not write_test(f"{index:03}-{name}", *func()):
                 pass
-
-    # sample_test_cases = [
-    # ]
-
-    # for i, inputs in enumerate(sample_test_cases):
-    #     write_test(f"{i+1:02}-sample", *inputs)
+            index += 1
 
 
 if __name__ == "__main__":
