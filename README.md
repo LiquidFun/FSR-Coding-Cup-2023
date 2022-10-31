@@ -9,14 +9,14 @@
   * *Preliminary problem idea*: your gloves are too thick for the bicycle lock. Can only turn 2 dials at once, 2-100 numbers from 0 to 9 on lock. How many steps to turn to correct solution (if possible) given start position and correct position.
   * *Difficulty*: 2/10
   * *Solution idea*: greedy, start at left and check whether rightmost digit is correct
-  * *Missing*: [**solution2**]
+  * *Missing*: [**solution2**, **image of gloves + lock**]
 </details>
 
 <details> 
   <summary>[DONE; but needs other solvers] Train Scheduling (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
-  * *Difficulty*: 3/10
+  * *Difficulty*: 3-4/10
   * *Solution idea*: make graph, traverse with dijkstra
   * *Missing*: [**solution2**]
 </details>
@@ -46,7 +46,7 @@
   * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**]
 </details>
 
 <details> 
@@ -80,8 +80,27 @@
   <summary>[FREE] Hidden Words (click me!)</summary>
 
   * *Preliminary problem idea*: Construct a n x n grid of letters.  You are given m words, each word should occur exactly once in that grid either horizontally or vertically. 
-  * *Difficulty*: 
+  * *Difficulty*: 5-8/10
   * *Solution idea*:
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+</details>
+
+
+<details> 
+  <summary>[FREE] Maze Game (click me!)</summary>
+
+  * *Preliminary problem idea*: given a maze as a 2D matrix of # and . print the length of the shortest path.
+  * *Difficulty*: 2-3/10
+  * *Solution idea*: dfs or bfs
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+</details>
+
+<details> 
+  <summary>[FREE] Flawed Cryptography (click me!)</summary>
+
+  * *Preliminary problem idea*: You are a pretty good white-hat-hacker and so you have found a backdoor on a website. Its security is at least not entirely terrible, you have gotten only the access to test the hashing algorithm of the website. You try it out, to see whether its SHA256 or something similar, but to your surprise you see that it seems to be neither, in fact it looks very short and not very good. For "password" you got "??e?b???" Immediately, you try a couple of other words
+  * *Difficulty*: 1-3/10
+  * *Solution idea*: leave "0-9a-f" as is in the original, calculate ascii index of rest of chars, take mod 16, index of "0-9a-f" list. Harder: + shift entire string by 3
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
 </details>
 
