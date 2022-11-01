@@ -114,6 +114,15 @@
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
 </details>
 
+<details> 
+  <summary>[FREE] Keyboard Robot (click me!)</summary>
+
+  * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
+  * *Difficulty*: 5-6/10
+  * *Solution idea*: dp
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+</details>
+
 
 ## Testing a solution
 
