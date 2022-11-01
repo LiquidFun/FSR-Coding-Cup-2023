@@ -105,6 +105,15 @@
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
 </details>
 
+<details> 
+  <summary>[FREE] Bouncy Ball (click me!)</summary>
+
+  * *Preliminary problem idea*: you are given a n x m grid of `.`, `O` or `#` characters, you are to compute the trajectory of a ball such that it hits the target `O`s. Print the trajectory, the ball bounces in a parabola
+  * *Difficulty*: 2-4/10
+  * *Solution idea*: bruteforce various throwing strengths
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+</details>
+
 
 ## Testing a solution
 
