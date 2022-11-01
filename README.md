@@ -59,7 +59,7 @@
 </details>
 
 <details> 
-  <summary>[FREE] Coffee-Maker 3000 (click me!)</summary>
+  <summary>[BAD PROBLEM; ignore] Coffee-Maker 3000 (click me!)</summary>
 
   * *Preliminary problem idea*: Tomorrow is the last submission day for your seminar paper, you have written exactly 0 words so far. It is time to work you say, it will be a long day. You prepare your custom self-built coffee machine for the next t hours. You have enough coffee for x coffee cups in that time. Each time it brews a coffee you drink it immediately and you gain a boost to your productivity for m minutes. Drinking multiple coffee cups in the same time is not as effective, it follows the formula sqrt(x), where x is the number of boosts active during that timeframe. Each minute you write n words, what is the maximum number of words you can write if you optimize the coffee machine?
   * *Difficulty*: 
@@ -87,13 +87,13 @@
 
 
 <details> 
-  <summary>[FREE] Maze Game (click me!)</summary>
+  <summary>[DONE; needs other solvers, better problem text] Aquarium Maze (click me!)</summary>
 
-  * *Preliminary problem idea*: given a maze as a 2D matrix of # and . print the length of the shortest path.
+  * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
   * *Difficulty*: 2-3/10
   * *Solution idea*: dfs or bfs
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
-  * Variation: Maze Aquarium: the maze is actually an aquarium, how much water fits inside of it? (Water does not flow up into airpockets)
+  * *Missing*: [**problem-text (improve)**, **solution2**]
+  * *Variation*: given a maze as a 2D matrix of # and . print the length of the shortest path.
 </details>
 
 <details> 
