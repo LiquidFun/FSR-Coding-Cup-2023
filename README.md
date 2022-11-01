@@ -93,6 +93,7 @@
   * *Difficulty*: 2-3/10
   * *Solution idea*: dfs or bfs
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**]
+  * Variation: Maze Aquarium: the maze is actually an aquarium, how much water fits inside of it? (Water does not flow up into airpockets)
 </details>
 
 <details> 
