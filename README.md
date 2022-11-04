@@ -60,12 +60,12 @@
 </details>
 
 <details> 
-  <summary>[FREE] Leaderboard Prediction (click me!)</summary>
+  <summary>[DONE-ish, needs solvers and problem text] Leaderboard Prediction (click me!)</summary>
 
   * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+  * *Missing*: [**problem-text**, **solution2**, **upload**, **solution-slide**]
 </details>
 
 <details> 

@@ -1,1 +1,1 @@
-print("no" if set("abcdefghijklmnopqrstuvwxyz") - set(''.join(input().lower() for _ in int(input()))) else "yes")
+import sys; print("no" if set("abcdefghijklmnopqrstuvwxyz") - set(sys.stdin.read().lower()) else "yes")
