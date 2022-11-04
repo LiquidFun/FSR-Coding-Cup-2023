@@ -4,12 +4,31 @@
 ## List of possible problem ideas
 
 <details> 
+  <summary>[DONE; needs other solvers, better problem text] Aquarium Maze (click me!)</summary>
+
+  * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
+  * *Difficulty*: 2-3/10
+  * *Solution idea*: dfs or bfs
+  * *Missing*: [**problem-text (improve)**, **solution2**, **solution-slide**]
+  * *Variation*: given a maze as a 2D matrix of # and . print the length of the shortest path.
+</details>
+
+<details> 
   <summary>[DONE; but needs other solvers] Bicycle Lock (click me!)</summary>
 
   * *Preliminary problem idea*: your gloves are too thick for the bicycle lock. Can only turn 2 dials at once, 2-100 numbers from 0 to 9 on lock. How many steps to turn to correct solution (if possible) given start position and correct position.
   * *Difficulty*: 2/10
   * *Solution idea*: greedy, start at left and check whether rightmost digit is correct
   * *Missing*: [**solution2**, **image of gloves + lock**, **solution-slide**]
+</details>
+
+<details> 
+  <summary>[DONE; needs other solvers] Fascinating Books (click me!)</summary>
+
+  * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
+  * *Difficulty*: 1/10
+  * *Solution idea*:
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 <details> 
@@ -41,30 +60,12 @@
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Fascinating Books (click me!)</summary>
-
-  * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
-  * *Difficulty*: 1/10
-  * *Solution idea*:
-  * *Missing*: [**solution2**, **solution-slide**]
-</details>
-
-<details> 
   <summary>[FREE] Leaderboard Prediction (click me!)</summary>
 
   * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
-</details>
-
-<details> 
-  <summary>[FREE] Keyboard Redesign (click me!)</summary>
-
-  * *Preliminary problem idea*: You have decided to redesign the keyboard. Given a list of words, create an optimal keyboard on a integer grid, such that the distances between letters is minimized when typing the given words."Easier" alternative: 1x26 row of numbers, still really hard, no idea how to solve?
-  * *Difficulty*: 5-9/10
-  * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
 <details> 
@@ -76,16 +77,6 @@
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
-
-<details> 
-  <summary>[DONE; needs other solvers, better problem text] Aquarium Maze (click me!)</summary>
-
-  * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
-  * *Difficulty*: 2-3/10
-  * *Solution idea*: dfs or bfs
-  * *Missing*: [**problem-text (improve)**, **solution2**, **solution-slide**]
-  * *Variation*: given a maze as a 2D matrix of # and . print the length of the shortest path.
-</details>
 
 <details> 
   <summary>[FREE] Flawed Cryptography (click me!)</summary>
@@ -111,10 +102,20 @@
   * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
   * *Difficulty*: 5-6/10
   * *Solution idea*: shortest path? dp?
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
 ---
+
+
+<details> 
+  <summary>[TOO HARD (?)] Keyboard Redesign (click me!)</summary>
+
+  * *Preliminary problem idea*: You have decided to redesign the keyboard. Given a list of words, create an optimal keyboard on a integer grid, such that the distances between letters is minimized when typing the given words."Easier" alternative: 1x26 row of numbers, still really hard, no idea how to solve?
+  * *Difficulty*: 5-9/10
+  * *Solution idea*:
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
 
 <details> 
   <summary>[BAD PROBLEM; ignore] Coffee-Maker 3000 (click me!)</summary>
