@@ -41,12 +41,12 @@
 </details>
 
 <details> 
-  <summary>[FREE] Fascinating Books (click me!)</summary>
+  <summary>[DONE; needs other solvers] Fascinating Books (click me!)</summary>
 
   * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 <details> 
