@@ -105,6 +105,15 @@
   * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
+<details> 
+  <summary>[FREE] Stubborn Students (click me!)</summary>
+
+  * *Preliminary problem idea*: you are to manage a n x m room full of seats for students, you expect near full occupancy so you decide in order to make the seating smoother to create an algorithm for automatic seating. Each row can only be accessed from one side. You are given a list of n students, and which time slots they have lectures (each student will only be in the room during those time slots.) Students are stubborn though, once seated they will not leave their place until they don't have a time slot in that room. Print a seating which minimizes the number of times a student has to stand up in order to allow another student through.
+  * *Difficulty*: 5-7/10
+  * *Solution idea*: dp?
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
 ---
 
 
