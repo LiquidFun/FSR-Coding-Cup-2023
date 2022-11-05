@@ -23,6 +23,15 @@
 </details>
 
 <details> 
+  <summary>[DONE; needs other solvers] Dam Construction (click me!)</summary>
+
+  * *Preliminary problem idea*: you have a limited number of 3 types of lego bricks, 1, 2 and 4 wide. What is the highest wall of width w you can build?
+  * *Difficulty*: 1-2/10
+  * *Solution idea*: greedy
+  * *Missing*: [**problem-text**, **solution2**, **solution-slide**, **image-in-problem**]
+</details>
+
+<details> 
   <summary>[DONE; needs other solvers] Fascinating Books (click me!)</summary>
 
   * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
@@ -97,7 +106,7 @@
 </details>
 
 <details> 
-  <summary>[FREE] Bouncy Ball (click me!)</summary>
+  <summary>[FREE] Elastic Ball (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a n x m grid of `.`, `O` or `#` characters, you are to compute the trajectory of a ball such that it hits the target `O`s. Print the trajectory, the ball bounces in a parabola
   * *Difficulty*: 2-4/10
@@ -115,6 +124,7 @@
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
+
 ---
 
 
@@ -122,7 +132,7 @@
   <summary>[TOO HARD (?)] Keyboard Redesign (click me!)</summary>
 
   * *Preliminary problem idea*: You have decided to redesign the keyboard. Given a list of words, create an optimal keyboard on a integer grid, such that the distances between letters is minimized when typing the given words."Easier" alternative: 1x26 row of numbers, still really hard, no idea how to solve?
-  * *Difficulty*: 5-9/10
+  * *Difficulty*: 6-9/10
   * *Solution idea*:
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
