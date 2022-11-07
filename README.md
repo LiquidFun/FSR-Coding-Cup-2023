@@ -89,8 +89,8 @@
 <details> 
   <summary>[FREE] Hidden Words (click me!)</summary>
 
-  * *Preliminary problem idea*: Construct a n x n grid of letters.  You are given m words, each word should occur exactly once in that grid either horizontally or vertically. 
-  * *Difficulty*: 5-8/10
+  * *Preliminary problem idea*: Given a list of words, construct a string of minimal length which contains each given word. Much easier variation: words have to appear in order. A bit harder: words appear in order, but may be shifted.
+  * *Difficulty*: 2-4/10
   * *Solution idea*:
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
@@ -132,7 +132,17 @@
   <summary>[TOO HARD (?)] Keyboard Redesign (click me!)</summary>
 
   * *Preliminary problem idea*: You have decided to redesign the keyboard. Given a list of words, create an optimal keyboard on a integer grid, such that the distances between letters is minimized when typing the given words."Easier" alternative: 1x26 row of numbers, still really hard, no idea how to solve?
-  * *Difficulty*: 6-9/10
+  * *Difficulty*: 6-10/10
+  * *Solution idea*:
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
+
+<details> 
+  <summary>[TOO HARD] Hidden Words (Hard) (click me!)</summary>
+
+  * *Preliminary problem idea*: Construct a n x n grid of letters.  You are given m words, each word should occur exactly once in that grid either horizontally or vertically. 
+  * *Difficulty*: 6-10/10
   * *Solution idea*:
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
