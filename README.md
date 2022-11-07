@@ -3,6 +3,8 @@
 
 ## List of possible problem ideas
 
+~~A✔️~~ ~~B✔️~~ ~~C~~ ~~D✔️~~ ~~E~~ ~~F✔️~~ ~~G✔️~~ ~~H✔️~~ **I** **J** ~~K✔️~~ ~~L✔️?~~
+
 <details> 
   <summary>[DONE; needs other solvers, better problem text] Aquarium Maze (click me!)</summary>
 
@@ -40,12 +42,22 @@
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
+
 <details> 
-  <summary>[DONE; needs other solvers] Train Scheduling (click me!)</summary>
+  <summary>[DONE; needs other solvers] Getting Home | _Train Scheduling_ (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
   * *Difficulty*: 3-4/10
   * *Solution idea*: make graph, traverse with dijkstra
+  * *Missing*: [**solution2**, **solution-slide**]
+</details>
+
+<details> 
+  <summary>[DONE; needs other solvers] Hidden Words (click me!)</summary>
+
+  * *Preliminary problem idea*: Given a list of words, construct a string of minimal length which contains each given word. Much easier variation: words have to appear in order. A bit harder: words appear in order, but may be shifted.
+  * *Difficulty*: 2/10
+  * *Solution idea*:
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
@@ -57,6 +69,16 @@
   * *Solution idea*: shortest path? dp?
   * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
+
+<details> 
+  <summary>[DONE-ish, needs solvers and problem text] Leaderboard Prediction (click me!)</summary>
+
+  * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
+  * *Difficulty*: 1/10
+  * *Solution idea*:
+  * *Missing*: [**problem-text**, **solution2**, **upload**, **solution-slide**]
+</details>
+
 
 <details> 
   <summary>[FREE] Wordle Hell (click me!)</summary>
@@ -74,24 +96,6 @@
   * *Preliminary problem idea*: You just completed the lecture on how to create compilers, and now that you are an expert at it you want to test your skills. You decide to create your own programming language. First steps first, however, so you decide the most important thing is brackets, and lots of them. You want to write a parser which tells you whether a list of open and closed brackets is valid. Print "valid" or "invalid"
   * *Difficulty*: 2-3/10
   * *Solution idea*: track sum of open/closed brackets, if negative: print invalid
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
-</details>
-
-<details> 
-  <summary>[DONE-ish, needs solvers and problem text] Leaderboard Prediction (click me!)</summary>
-
-  * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
-  * *Difficulty*: 1/10
-  * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution2**, **upload**, **solution-slide**]
-</details>
-
-<details> 
-  <summary>[FREE] Hidden Words (click me!)</summary>
-
-  * *Preliminary problem idea*: Given a list of words, construct a string of minimal length which contains each given word. Much easier variation: words have to appear in order. A bit harder: words appear in order, but may be shifted.
-  * *Difficulty*: 2-4/10
-  * *Solution idea*:
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
