@@ -66,6 +66,17 @@ def main():
             write_test(f"{index:03}-{name}", func())
             index += 1
 
+    edge_test_cases = [
+        "{",
+        "}",
+        "{}",
+        "}{",
+    ]
+
+    for inputs in edge_test_cases:
+        write_test(f"{index:03}-edgecase", inputs)
+        index += 1
+
 
 
 if __name__ == "__main__":
