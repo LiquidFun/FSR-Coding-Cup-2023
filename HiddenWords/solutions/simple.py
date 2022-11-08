@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 n = int(input())
 words = input().split()
 answer = [words[0]]

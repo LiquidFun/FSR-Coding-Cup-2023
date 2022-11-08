@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 rows, cols = map(int, input().split())
 maze = [list(input()) for _ in range(rows)]
 

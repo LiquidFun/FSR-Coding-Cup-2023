@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 kb = [input() for _ in range(6)]
 chars = input()
 # no_subsequent_duplicates = [chars[0]]

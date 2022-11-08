@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 target_width = int(input())
 bricks = list(reversed([int(a) for a in input().split()]))
 sizes = [4, 2, 1]

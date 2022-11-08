@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 rows, cols = map(int, input().split())
 assert 3 <= rows <= 100 
 assert 3 <= cols <= 200 

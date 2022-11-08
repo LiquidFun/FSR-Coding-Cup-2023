@@ -1,3 +1,5 @@
+# Author: Marian Zuska
+
 r, c = map(int, input().split())
 
 grid = []

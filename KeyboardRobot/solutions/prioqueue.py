@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 from queue import PriorityQueue
 
 kb = [input() for _ in range(6)]

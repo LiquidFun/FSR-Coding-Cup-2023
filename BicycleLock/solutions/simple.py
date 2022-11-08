@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 n = int(input())
 current = [int(a) for a in input().split()]
 target = [int(a) for a in input().split()]

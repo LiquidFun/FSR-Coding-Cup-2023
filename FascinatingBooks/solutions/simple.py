@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 import string
 import sys
 

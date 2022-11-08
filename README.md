@@ -3,15 +3,17 @@
 
 ## List of possible problem ideas
 
-~~A✔️~~ ~~B✔️~~ ~~C~~ ~~D✔️~~ ~~E~~ ~~F✔️~~ ~~G✔️~~ ~~H✔️~~ **I** **J** ~~K✔️~~ ~~L✔️?~~
+[A✔️ | B✔️ | C✔️ | D✔️ | E💡 | F✔️ | G✔️ | H✔️ | I❓ | J❓ | K✔️ | L✔️]
+
+Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
 
 <details> 
-  <summary>[DONE; needs other solvers, better problem text] Aquarium Maze (click me!)</summary>
+  <summary>[DONE; needs better problem text] Aquarium Maze (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
   * *Difficulty*: 2-3/10
   * *Solution idea*: dfs or bfs
-  * *Missing*: [**problem-text (improve)**, **solution2**, **solution-slide**]
+  * *Missing*: [**problem-text (improve)**, **solution-slide**]
   * *Variation*: given a maze as a 2D matrix of # and . print the length of the shortest path.
 </details>
 
@@ -22,6 +24,15 @@
   * *Difficulty*: 2/10
   * *Solution idea*: greedy, start at left and check whether rightmost digit is correct
   * *Missing*: [**solution2**, **image of gloves + lock**, **solution-slide**]
+</details>
+
+<details> 
+  <summary>[DONE; needs other solvers] Compilers & Brackets (click me!)</summary>
+
+  * *Preliminary problem idea*: You just completed the lecture on how to create compilers, and now that you are an expert at it you want to test your skills. You decide to create your own programming language. First steps first, however, so you decide the most important thing is brackets, and lots of them. You want to write a parser which tells you whether a list of open and closed brackets is valid. Print "valid" or "invalid"
+  * *Difficulty*: 2-3/10
+  * *Solution idea*: track sum of open/closed brackets, if negative: print invalid
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 <details> 
@@ -86,16 +97,6 @@
   * *Preliminary problem idea*: While again not paying attention in the lecture, you are playing wordle on your phone. You see that you only have 4 guesses left. You wonder what is the best way to test as many letters as possible. Given a list of 5-letter words (may not be valid wordle words), find 4 words which maximize the number of distinct letters across them.
   * *Difficulty*: 3-6/10
   * *Solution idea*: 
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
-</details>
-
-
-<details> 
-  <summary>[Marian] Compilers & Brackets (click me!)</summary>
-
-  * *Preliminary problem idea*: You just completed the lecture on how to create compilers, and now that you are an expert at it you want to test your skills. You decide to create your own programming language. First steps first, however, so you decide the most important thing is brackets, and lots of them. You want to write a parser which tells you whether a list of open and closed brackets is valid. Print "valid" or "invalid"
-  * *Difficulty*: 2-3/10
-  * *Solution idea*: track sum of open/closed brackets, if negative: print invalid
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 

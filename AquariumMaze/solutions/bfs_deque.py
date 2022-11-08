@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 from collections import deque
 
 rows, cols = map(int, input().split())

@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 from queue import PriorityQueue
 from collections import defaultdict
 
