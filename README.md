@@ -28,7 +28,7 @@
   <summary>[DONE; needs other solvers] Dam Construction (click me!)</summary>
 
   * *Preliminary problem idea*: you have a limited number of 3 types of lego bricks, 1, 2 and 4 wide. What is the highest wall of width w you can build?
-  * *Difficulty*: 1-2/10
+  * *Difficulty*: 3/10
   * *Solution idea*: greedy
   * *Missing*: [**problem-text**, **solution2**, **solution-slide**, **image-in-problem**]
 </details>
@@ -44,10 +44,10 @@
 
 
 <details> 
-  <summary>[DONE; needs other solvers] Getting Home | _Train Scheduling_ (click me!)</summary>
+  <summary>[DONE; needs other solvers] Going Home | _Train Scheduling_ (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
-  * *Difficulty*: 3-4/10
+  * *Difficulty*: 5/10
   * *Solution idea*: make graph, traverse with dijkstra
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
@@ -65,7 +65,7 @@
   <summary>[DONE; REALLY needs other solvers] Keyboard Robot (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
-  * *Difficulty*: 5-6/10
+  * *Difficulty*: 6/10
   * *Solution idea*: shortest path? dp?
   * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
@@ -113,7 +113,7 @@
   <summary>[FREE] Elastic Ball (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a n x m grid of `.`, `O` or `#` characters, you are to compute the trajectory of a ball such that it hits the target `O`s. Print the trajectory, the ball bounces in a parabola
-  * *Difficulty*: 2-4/10
+  * *Difficulty*: 3-4/10
   * *Solution idea*: bruteforce various throwing strengths
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
