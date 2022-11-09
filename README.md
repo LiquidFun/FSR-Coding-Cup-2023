@@ -1,4 +1,4 @@
-# FSR Cup 2023 Problems
+# FSR Coding Cup 2023 Problems
 
 
 ## List of possible problem ideas
@@ -6,6 +6,8 @@
 [A✔️ | B✔️ | C✔️ | D✔️ | E💡 | F✔️ | G✔️ | H✔️ | I❓ | J❓ | K✔️ | L✔️]
 
 Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
+
+---
 
 <details> 
   <summary>[DONE; needs better problem text] Aquarium Maze (click me!)</summary>
