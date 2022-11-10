@@ -3,7 +3,7 @@
 
 ## List of possible problem ideas
 
-[A✔️ | B✔️ | C✔️ | D✔️ | E💡 | F✔️ | G✔️ | H✔️ | I❓ | J❓ | K✔️ | L✔️]
+[A✔️ | B✔️ | C✔️ | D✔️ | E💡 | F✔️ | G✔️ | H✔️ | I✔️ | J❓ | K✔️ | L✔️]
 
 Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
 
@@ -128,6 +128,26 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Preliminary problem idea*: you are to manage a n x m room full of seats for students, you expect near full occupancy so you decide in order to make the seating smoother to create an algorithm for automatic seating. Each row can only be accessed from one side. You are given a list of n students, and which time slots they have lectures (each student will only be in the room during those time slots.) Students are stubborn though, once seated they will not leave their place until they don't have a time slot in that room. Print a seating which minimizes the number of times a student has to stand up in order to allow another student through.
   * *Difficulty*: 5-7/10
   * *Solution idea*: dp?
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
+
+<details> 
+  <summary>[FREE] Intuitive Citations (click me!)</summary>
+
+  * *Preliminary problem idea*: Random authors, print first author alphabetically + et al  
+  * *Difficulty*: 1/10
+  * *Solution idea*: sort
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
+
+<details> 
+  <summary>[FREE] J... Bacteria (click me!)</summary>
+
+  * *Preliminary problem idea*: a colony of bacteria doubles every n minutes, at hour x the petri dish was full, when was the petri dish half full? 
+  * *Difficulty*: 1/10
+  * *Solution idea*: too easy
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
