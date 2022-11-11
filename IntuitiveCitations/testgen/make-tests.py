@@ -32,7 +32,7 @@ def random_word():
 
 
 def make_random():
-    n = randint(1, 20)
+    n = randint(1, 50)
     authors = []
     for _ in range(n):
         authors.append(random_word() + " " + random_word())
