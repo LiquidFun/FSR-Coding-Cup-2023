@@ -8,8 +8,9 @@ A problem will count as solved if is solved at or before minute $h \cdot 60$. Fo
 
 ## Input format
 
-The first line will contain 2 integers $n$ ($5 <= n <= 15$) and $h$ ($1 <= h <= 10$).
-Then $n$ lines follow, each with a single integer $m_i$ specifying how many minutes you need in order to solve problem $i$. 
+The first line will contain 2 integers $n$ ($1 <= n <= 15$) and $h$ ($1 <= h <= 10$).
+Then $n$ lines follow, each with a single integer $m_i$ ($1 <= m_i <= 300$) specifying how many minutes you need in order to solve problem $i$. 
 
 ## Output format
+
 Print 2 integers, the maximum number of problems you can solve during the contest, and the minimum penalty for those solved problems. 

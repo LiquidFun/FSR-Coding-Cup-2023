@@ -22,12 +22,12 @@ def write_test(name, times: list, hours: int):
 
 
 def make_random():
-    n = randint(5, 15)
+    n = randint(1, 15)
     h = randint(1, 10)
 
     times = []
     for _ in range(n):
-        times.append(randint(1, 240))
+        times.append(randint(1, 300))
     return times, h
 
 
