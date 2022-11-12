@@ -10,12 +10,12 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 ---
 
 <details> 
-  <summary>[DONE; needs better problem text] Aquarium Maze (click me!)</summary>
+  <summary>[DONE ✔️] Aquarium Maze (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
   * *Difficulty*: 2-3/10
   * *Solution idea*: dfs or bfs
-  * *Missing*: [**problem-text (improve)**, **solution-slide**]
+  * *Missing*: [(improve)**, **solution-slide**]
   * *Variation*: given a maze as a 2D matrix of # and . print the length of the shortest path.
 </details>
 
@@ -43,16 +43,16 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Preliminary problem idea*: you have a limited number of 3 types of lego bricks, 1, 2 and 4 wide. What is the highest wall of width w you can build?
   * *Difficulty*: 3/10
   * *Solution idea*: greedy
-  * *Missing*: [**problem-text**, **solution2**, **solution-slide**, **image-in-problem**]
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Fascinating Books (click me!)</summary>
+  <summary>[DONE ✔️] Fascinating Books (click me!)</summary>
 
   * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**solution2**, **solution-slide**]
+  * *Missing*: [**solution-slide**, **image-in-library**]
 </details>
 
 
@@ -74,22 +74,32 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
+
 <details> 
-  <summary>[DONE; REALLY needs other solvers] Keyboard Robot (click me!)</summary>
+  <summary>[DONE; needs other solvers] Intuitive Citations (click me!)</summary>
+
+  * *Preliminary problem idea*: Random authors, print first author alphabetically + et al
+  * *Difficulty*: 1/10
+  * *Solution idea*: sort
+  * *Missing*: [**solution2**, **solution-slide**]
+</details>
+
+<details> 
+  <summary>[DONE; needs other solvers] Keyboard Robot (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
   * *Difficulty*: 6/10
   * *Solution idea*: shortest path? dp?
-  * *Missing*: [**problem-text**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 <details> 
-  <summary>[DONE-ish, needs solvers and problem text] Leaderboard Prediction (click me!)</summary>
+  <summary>[DONE, needs other solvers] Leaderboard Prediction (click me!)</summary>
 
   * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
   * *Difficulty*: 1/10
   * *Solution idea*:
-  * *Missing*: [**problem-text**, **solution2**, **upload**, **solution-slide**]
+  * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
 
@@ -128,16 +138,6 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Preliminary problem idea*: you are to manage a n x m room full of seats for students, you expect near full occupancy so you decide in order to make the seating smoother to create an algorithm for automatic seating. Each row can only be accessed from one side. You are given a list of n students, and which time slots they have lectures (each student will only be in the room during those time slots.) Students are stubborn though, once seated they will not leave their place until they don't have a time slot in that room. Print a seating which minimizes the number of times a student has to stand up in order to allow another student through.
   * *Difficulty*: 5-7/10
   * *Solution idea*: dp?
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
-</details>
-
-
-<details> 
-  <summary>[FREE] Intuitive Citations (click me!)</summary>
-
-  * *Preliminary problem idea*: Random authors, print first author alphabetically + et al  
-  * *Difficulty*: 1/10
-  * *Solution idea*: sort
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
