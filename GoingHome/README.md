@@ -2,6 +2,12 @@ It just turned 00:00; you look at your phone: a new calendar notification just p
 
 * Assume that you are not cunning enough to check any of the other sites which may return a complete route!
 
+
+\begin{center}
+  \includegraphics{wartungsarbeiten.png} \\
+  \small{Completely fictitious scenario}
+\end{center}
+
 ## Input
 
 The first line contains two integers and a string:
@@ -20,11 +26,9 @@ Then $m$ lines follow with the following format:
 
 This means that there are 2 trains leaving from \t{rostock} to \t{dresden}, at 10:21 and at 12:21. They will arrive at 11:11 and 13:11 respectively.
 
-Note that no doubled spaces will occur in actual input file. 
-
 ## Output
 
-A string of length 5 formatted as (\t{HH:MM}), the earliest time of arrival at your home city \it{h} from the city of \t{"rostock"}.
+A string of length 5 formatted as (\t{HH:MM}), the earliest time of arrival at your home city \it{h} from the city of \t{``rostock''}.
 
 
 Alternative (previous text): You are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time

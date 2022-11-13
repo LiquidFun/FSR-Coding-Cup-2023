@@ -85,6 +85,16 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
+  <summary>[DONE; needs other solvers] Jolly Fishing (click me!)</summary>
+
+  * *Preliminary problem idea*: fishes grow by x percent everyday, fishers fish y percent everyday, you can permit them to fish on any day of the year, what is the maximum number of Megafishes you can allow to fish without overfishing?
+  * *Difficulty*: 2/10
+  * *Solution idea*: greedy-ish
+  * *Missing*: [**solution2**, **solution-slide**]
+</details>
+
+
+<details> 
   <summary>[DONE; needs other solvers] Keyboard Robot (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
@@ -150,6 +160,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Solution idea*: too easy
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
+
 
 
 ---
