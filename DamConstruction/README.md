@@ -4,10 +4,10 @@
 
 You are the manager for a dam construction company called \it{Damn Dams Inc.}, and now you have a new contract. Luckily for you, the company is based in Rostock, so the dams are rather small. In fact, they are built from lego bricks! You are to oversee the construction of a new dam, you are not sure though whether you have enough materials (lego bricks) for it. 
 
-Your company only uses three types of bricks to build dams: 1x1, 2x1 and 4x1 bricks (see picture). The contract requires the dam to be of exact width $w$. In order to estimate if you can build the required dam, you need to evaluate your available resources first. What is the maximum height you can build the dam to using the available resources, such that there are no holes? Only count complete layers for this.
+Your company only uses three types of bricks to build dams: 1x1, 2x1 and 4x1 bricks (see picture). The contract requires the dam to be of exact width $w$. In order to estimate if you can build the required dam, you need to evaluate your available resources first. What is the maximum height you can build the dam to using the available resources, such that there are no holes? Only count complete layers for this. It does not matter how bricks in two adjacent layers overlap, because you will be using \it{Damn Dams Inc.} patented sealant for structural integrity.
 
 \begin{center}
-  \includegraphics{bricks3.png} \\
+  \includegraphics{bricks4.png} \\
   \small{Example solution for sample 1}
 \end{center}
 
