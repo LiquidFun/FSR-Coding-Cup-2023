@@ -3,7 +3,7 @@
 
 ## List of possible problem ideas
 
-[A✔️ | B✔️ | C✔️ | D✔️ | E💡 | F✔️ | G✔️ | H✔️ | I✔️ | J❓ | K✔️ | L✔️]
+[A✔️ | B✔️ | C✔️ | D✔️ | E❓ | F✔️ | G✔️ | H✔️ | I✔️ | J✔️ | K✔️ | L✔️]
 
 Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
 

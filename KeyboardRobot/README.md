@@ -6,6 +6,8 @@ Everyone knows that the most important thing for a programmer is their typing sp
 
 Given a 6x6 keyboard layout you have designed and a sequence of characters, calculate the minimum possible distance travelled by 2 mechanical fingers in order to type that character sequence. Assume that fingers may not travel diagonally, only in a straight line horizontally or vertically. The distance between two adjacent keyboard buttons is 1, therefore the maximum distance on the keyboard between the top-left and bottom-right buttons is $5+5 = 10$.
 
+Both fingers will be initially at the top left key (even if the key is empty). The fingers do not hinder each other and can stay at or move to the same position.
+
 ## Input format
 
 The first 6 lines contain your keyboard layout, each of those lines contains exactly 6 characters. Among these 36 characters it is guaranteed that each letter in the English alphabet appears exactly once. Additionally, the space-bar is encoded as a underscore \t{_}. Dots (\t{.}) denote empty parts of the keyboard and may be ignored.
