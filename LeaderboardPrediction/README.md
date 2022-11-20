@@ -4,6 +4,8 @@
 
 You are a crazy good competitive programmer, so you are participating in the ACM ICPC World Finals 2022 in Egypt. You have $h$ hours for the contest in total. You have already read all $n$ problems, and since you are so good you immediately know how long each problem will take you in minutes. Print how many problems you will be able to solve in $h$ hours and what the time penalty will be for those solved problems. Note that you will of course make no mistakes, and each submission will be accepted on the first try.
 
+The scoring for the ACM ICPC World Finals works just the same way as the competition you are participating in right now! Teams are scored by two values, firstly, by the number of correctly solved problems (higher is better), then by the sum of submission times in minutes for the correctly solved problems (lower is better). The second value is called the time penalty. For example, a team which has solved 3 problems at minute 14, 51 and 267 will have a time penalty of $14+51+267=332$. Unsolved problems, even if they have incorrect submissions, do not add to the time penalty.
+
 A problem will count as solved if is solved at or before minute $h \cdot 60$. For example, if the contest is 5 hours long, then a problem can be solved at minute 300 since minute 300 is the time from 4:59:00 up to and including 4:59:59.
 
 ## Input format

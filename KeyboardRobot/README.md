@@ -2,7 +2,7 @@
 
 ## Statement
 
-Everyone knows that the most important thing for a programmer is their typing speed! And you have been on a journey to improve your typing speed for a while, employing the fastest typing method known to man: 2 finger-typing. You have tested various keyboard layouts, such as Qwerty, Colemak, Dvorak and so on. But none of these are good enough for, you so you have decided to design your own. To streamline this process you have also created a robot which is used to test such a keyboard layout. Of course such a robot only has 2 mechanical fingers, which matches your superior typing preference.
+Everyone knows that the most important thing for a programmer is their typing speed! And you have been on a journey to improve your typing speed for a while, employing the fastest typing method known to man: 2 finger-typing. You have tested various keyboard layouts, such as Qwerty, Colemak, Dvorak and so on. But none of these are good enough for you, so you have decided to design your own. To streamline this process you have also created a robot which is used to test such a keyboard layout. Of course such a robot only has 2 mechanical fingers, which matches your superior typing preference.
 
 Given a 6x6 keyboard layout you have designed and a sequence of characters, calculate the minimum possible distance travelled by 2 mechanical fingers in order to type that character sequence. Assume that fingers may not travel diagonally, only in a straight line horizontally or vertically. The distance between two adjacent keyboard buttons is 1, therefore the maximum distance on the keyboard between the top-left and bottom-right buttons is $5+5 = 10$.
 
