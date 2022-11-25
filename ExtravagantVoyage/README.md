@@ -1,4 +1,4 @@
-# Extravagant Voyage
+# Extravagant Journey
 
 ## Statement
 

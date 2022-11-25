@@ -6,7 +6,7 @@ def assure_naming(name):
     assert all(c in string.ascii_lowercase for c in name[1:])
 
 n = int(input())
-assert 1 <= n <= 20
+assert 1 <= n <= 50
 for i in range(n):
     list(map(assure_naming, input().split()))
 

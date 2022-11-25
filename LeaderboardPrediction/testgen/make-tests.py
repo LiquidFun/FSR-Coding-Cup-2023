@@ -22,12 +22,12 @@ def write_test(name, times: list, hours: int):
 
 
 def make_random():
-    n = randint(5, 15)
+    n = randint(1, 15)
     h = randint(1, 10)
 
     times = []
     for _ in range(n):
-        times.append(randint(1, 240))
+        times.append(randint(1, 300))
     return times, h
 
 
@@ -35,7 +35,7 @@ def main():
     index = 1
 
     sample_test_cases = [
-        ([15, 27, 5, 44, 102, 184, 22, 36, 7, 115], 4),
+        ([15, 27, 5, 44], 1),
         ([240], 1),
         ([1], 1),
     ]
