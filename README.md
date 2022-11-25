@@ -152,6 +152,15 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 
+<details> 
+  <summary>[FREE] Extravagant Voyage (click me!)</summary>
+
+  * *Preliminary problem idea*: You are travelling home as part of going home, you are bringing n items of value x and volume v, your luggage only fits L litres of volume though. What is the maximum sentimental value you can bring?
+  * *Difficulty*:
+  * *Solution idea*: knapsack
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
 ---
 
 
