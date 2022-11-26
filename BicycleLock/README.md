@@ -27,7 +27,7 @@ You just arrived at the Konrad-Zuse-Haus, it is already 17:13! Your lecture star
 You are given 3 lines: 
 
 \begin{itemize}
-\item The first line contains an integer $n$ ($1 <= n <= 100$), specifying the number of dials on your bicycle lock.
+\item The first line contains an integer $n$ ($2 <= n <= 100$), specifying the number of dials on your bicycle lock.
 \item The second line contains $n$ integers $c_i$ ($0 <= c_i <= 9$) the current position of the $n$ dials.
 \item The third line contains $n$ integers $t_i$ ($0 <= t_i <= 9$) the target position of the $n$ dials.
 \end{itemize}
