@@ -1,3 +1,4 @@
+<!--
 Your gloves are too thick for the bicycle lock. You can only turn 2 dials at once, 2-100 numbers from 0 to 9 on lock. How many steps to turn to correct solution (if possible) given start position and correct position.
 
 
@@ -9,6 +10,8 @@ Variation 2: instead of saying whether a given position is possible, give the nu
 As you arrive at the KZH with your bicycle, you notice that your lock may be hard to unlock, because you are wearing thick gloves. 
 
 ===
+
+-->
 
 # Bicycle Lock
 
@@ -34,4 +37,4 @@ You are given 3 lines:
 
 ## Output 
 
-Print "impossible" if it is not possible to turn the dials without undoing the gloves. Otherwise print the number of turns to reach the target position
+Print ``impossible'' if it is not possible to turn the dials without undoing the gloves. Otherwise print the number of turns to reach the target position.

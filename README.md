@@ -3,7 +3,7 @@
 
 ## List of possible problem ideas
 
-[A✔️ | B✔️ | C✔️ | D✔️ | E❓ | F✔️ | G✔️ | H✔️ | I✔️ | J✔️ | K✔️ | L✔️]
+[A✔️ | B✔️ | C✔️ | D✔️ | E✔️ | F✔️ | G✔️ | H✔️ | I✔️ | J✔️ | K✔️ | L✔️]
 
 Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
 
@@ -46,6 +46,16 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
+
+<details> 
+  <summary>[DONE; needs other solvers] Extravagant Voyage (click me!)</summary>
+
+  * *Preliminary problem idea*: You are travelling home as part of going home, you are bringing n items of value x and volume v, your luggage only fits L litres of volume though. What is the maximum sentimental value you can bring?
+  * *Difficulty*:
+  * *Solution idea*: knapsack
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
 <details> 
   <summary>[DONE] Fascinating Books (click me!)</summary>
 
@@ -82,16 +92,6 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Difficulty*: 1/10
   * *Solution idea*: sort
   * *Missing*: [**solution2**, **solution-slide**]
-</details>
-
-
-<details> 
-  <summary>[DONE; needs other solvers] Extravagant Voyage (click me!)</summary>
-
-  * *Preliminary problem idea*: You are travelling home as part of going home, you are bringing n items of value x and volume v, your luggage only fits L litres of volume though. What is the maximum sentimental value you can bring?
-  * *Difficulty*:
-  * *Solution idea*: knapsack
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
 <details> 
