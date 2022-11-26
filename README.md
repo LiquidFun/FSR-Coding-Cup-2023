@@ -10,7 +10,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 ---
 
 <details> 
-  <summary>[DONE ✔️] Aquarium Maze (click me!)</summary>
+  <summary>[DONE] Aquarium Maze (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 2D matrix of # and . (an aquarium). How much water fits inside of it? (Water does not flow up into airpockets)
   * *Difficulty*: 2-3/10
@@ -20,7 +20,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Bicycle Lock (click me!)</summary>
+  <summary>[DONE] Bicycle Lock (click me!)</summary>
 
   * *Preliminary problem idea*: your gloves are too thick for the bicycle lock. Can only turn 2 dials at once, 2-100 numbers from 0 to 9 on lock. How many steps to turn to correct solution (if possible) given start position and correct position.
   * *Difficulty*: 2/10
@@ -29,7 +29,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Compilers & Brackets (click me!)</summary>
+  <summary>[DONE] Compilers & Brackets (click me!)</summary>
 
   * *Preliminary problem idea*: You just completed the lecture on how to create compilers, and now that you are an expert at it you want to test your skills. You decide to create your own programming language. First steps first, however, so you decide the most important thing is brackets, and lots of them. You want to write a parser which tells you whether a list of open and closed brackets is valid. Print "valid" or "invalid"
   * *Difficulty*: 2-3/10
@@ -38,7 +38,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Dam Construction (click me!)</summary>
+  <summary>[DONE] Dam Construction (click me!)</summary>
 
   * *Preliminary problem idea*: you have a limited number of 3 types of lego bricks, 1, 2 and 4 wide. What is the highest wall of width w you can build?
   * *Difficulty*: 3/10
@@ -47,7 +47,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE ✔️] Fascinating Books (click me!)</summary>
+  <summary>[DONE] Fascinating Books (click me!)</summary>
 
   * *Preliminary problem idea*: You wonder around the library looking for the best book on visual basic, but you see so many books that any book title you read starts to lose its meaning. You just see letters, and you start to wonder. Do these books on this shelf contain each letter of the english alphabet at least once? Print "yes" or "no"
   * *Difficulty*: 1/10
@@ -57,7 +57,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 
 
 <details> 
-  <summary>[DONE; needs other solvers] Going Home | _Train Scheduling_ (click me!)</summary>
+  <summary>[DONE] Going Home | _Train Scheduling_ (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
   * *Difficulty*: 5/10
@@ -66,7 +66,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE; needs other solvers] Hidden Words (click me!)</summary>
+  <summary>[DONE] Hidden Words (click me!)</summary>
 
   * *Preliminary problem idea*: Given a list of words, construct a string of minimal length which contains each given word. Much easier variation: words have to appear in order. A bit harder: words appear in order, but may be shifted.
   * *Difficulty*: 2/10
@@ -76,7 +76,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 
 
 <details> 
-  <summary>[DONE; needs other solvers] Intuitive Citations (click me!)</summary>
+  <summary>[DONE] Intuitive Citations (click me!)</summary>
 
   * *Preliminary problem idea*: Random authors, print first author alphabetically + et al
   * *Difficulty*: 1/10
@@ -84,8 +84,18 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
 
+
 <details> 
-  <summary>[DONE; needs other solvers] Jolly Fishing (click me!)</summary>
+  <summary>[DONE; needs other solvers] Extravagant Voyage (click me!)</summary>
+
+  * *Preliminary problem idea*: You are travelling home as part of going home, you are bringing n items of value x and volume v, your luggage only fits L litres of volume though. What is the maximum sentimental value you can bring?
+  * *Difficulty*:
+  * *Solution idea*: knapsack
+  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
+</details>
+
+<details> 
+  <summary>[DONE] Jolly Fishing (click me!)</summary>
 
   * *Preliminary problem idea*: fishes grow by x percent everyday, fishers fish y percent everyday, you can permit them to fish on any day of the year, what is the maximum number of Megafishes you can allow to fish without overfishing?
   * *Difficulty*: 2/10
@@ -104,13 +114,16 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 </details>
 
 <details> 
-  <summary>[DONE, needs other solvers] Leaderboard Prediction (click me!)</summary>
+  <summary>[DONE] Leaderboard Prediction (click me!)</summary>
 
   * *Preliminary problem idea*: You are a crazy good competitive programmer, you have read all 8 problems, you have 3 hours and 50 minutes of the contest remaining, and now you know how long each problem will take you in minutes. Print how many problems you will be able to solve in 3:50 and what the time penalty will be for those solved problems.
   * *Difficulty*: 1/10
   * *Solution idea*:
   * *Missing*: [**solution2**, **solution-slide**]
 </details>
+
+
+---
 
 
 <details> 
@@ -161,15 +174,6 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
   * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
 </details>
 
-
-<details> 
-  <summary>[FREE] Extravagant Voyage (click me!)</summary>
-
-  * *Preliminary problem idea*: You are travelling home as part of going home, you are bringing n items of value x and volume v, your luggage only fits L litres of volume though. What is the maximum sentimental value you can bring?
-  * *Difficulty*:
-  * *Solution idea*: knapsack
-  * *Missing*: [**problem-text**, **solution1**, **solution2**, **tests**, **validator**, **checker**, **upload**, **solution-slide**]
-</details>
 
 ---
 
