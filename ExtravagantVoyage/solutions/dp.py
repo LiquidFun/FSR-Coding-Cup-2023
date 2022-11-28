@@ -1,3 +1,5 @@
+# Author: Brutenis Gliwa
+
 n, v = map(int, input().split())
 volume = [int(a) for a in input().split()]
 value = [int(a) for a in input().split()]

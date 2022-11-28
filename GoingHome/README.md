@@ -24,11 +24,18 @@ Then $m$ lines follow with the following format:
 
 \t{rostock   dresden   50      2         10:21 12:21}. 
 
-This means that there are 2 trains leaving from \t{rostock} to \t{dresden}, at 10:21 and at 12:21. They will arrive at 11:11 and 13:11 respectively.
+The above line means that there are 2 trains leaving from \t{rostock} to \t{dresden}, at 10:21 and at 12:21. They will arrive at 11:11 and 13:11 respectively.
+
+$from\_city$ and $to\_city$ are strings of lowercase english alphabet letters with a length of between 1 and 10 inclusive. $mins$ ($1 <= mins <= 1440$) is the interval between trains in minutes for this connection. $trains$ ($1 <= trains <= 20$) is the number of departure times that follow. Then $trains$ number of strings follow, formatted as \t{HH:MM}.
+
 
 ## Output
 
 A string of length 5 formatted as (\t{HH:MM}), the earliest time of arrival at your home city \it{h} from the city of \t{``rostock''}.
+
+
+
+
 
 
 Alternative (previous text): You are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time

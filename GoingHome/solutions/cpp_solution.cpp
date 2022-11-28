@@ -1,4 +1,4 @@
-# Author: Marian Zuska
+// Author: Marian Zuska
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,3 +1,5 @@
+// Author: Brutenis Gliwa
+
 fun main() {
     var n = readln().toInt()
     (1..n)

@@ -17,8 +17,8 @@ for i in range(m):
         assert 0 <= ho <= 23 and 0 <= mi <= 59
         assert ho * 60 + mi + mins <= 24*60-1
     cities |= {c1, c2}
-    assert mins >= 0
-    assert tracks >= 0
+    assert 1 <= mins <= 24*60
+    assert 1 <= tracks <= 20
 for city in cities:
     assert all(c in string.ascii_lowercase for c in city)
     assert all(1 <= len(c) <= 10 for c in city)
