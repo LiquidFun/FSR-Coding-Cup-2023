@@ -55,15 +55,15 @@ sticks and test if they sum up to $h$.
 A sample python implementation could be the following:
 
 ```cpp
-1.   for(int i = 0; i < sticks.size(); i++) {
-2.      for(int j = i+1; j < sticks.size(); j++) {
-3.          if(sticks[i]+sticks[j] == h) {
-4.              cout << sticks[i] << " " << sticks[j] << "\n";
-5.              return 0;
-6.          }
-7.      }
-8.   }
-7.   cout << "impossible!" << "\n";
+for(int i = 0; i < sticks.size(); i++) {
+  for(int j = i+1; j < sticks.size(); j++) {
+    if(sticks[i]+sticks[j] == h) {
+      cout << sticks[i] << " " << sticks[j] << "\n";
+      return 0;
+    }
+  }
+}
+cout << "impossible!" << "\n";
 ```
 
 Note that the second for loop starts at the stick after stick $i$ to avert
@@ -102,23 +102,23 @@ this case, you can use a Set, a data structure which allows for O(log $n$)
 lookups. The resulting code could look like this in python:
 
 ```cpp
- 1.   set<int> stick_set;
- 2.   for(int i = 0; i < sticks.size(); i++) {
- 3.     stick_set.insert(sticks[i])
- 4.   }
- 5.
- 6.   for(int i = 0; i < sticks.size(); i++) {
- 7.     if(2*sticks[i] == h) {
- 8.       if(sticks.count(h_i) >= 2) {
- 9.         cout << sticks[i] << " " << sticks[j] << "\n";
-10.         return 0;
-11.       }
-12.     } else if(set.contains(h - sticks[i])) {
-13.       cout << sticks[i] << " " << sticks[j] << "\n";
-14.       return 0;
-15.     }
-16.   }
-17.   cout << "impossible!" << "\n";
+set<int> stick_set;
+for(int i = 0; i < sticks.size(); i++) {
+  stick_set.insert(sticks[i])
+}
+
+for(int i = 0; i < sticks.size(); i++) {
+  if(2*sticks[i] == h) {
+    if(sticks.count(h_i) >= 2) {
+      cout << sticks[i] << " " << sticks[j] << "\n";
+      return 0;
+    }
+  } else if(set.contains(h - sticks[i])) {
+    cout << sticks[i] << " " << sticks[j] << "\n";
+    return 0;
+  }
+}
+cout << "impossible!" << "\n";
 ```
 
 The complexity of this solution is O($n$ \* log $n$), as the *for* loop iterates

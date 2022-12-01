@@ -57,12 +57,12 @@ sticks and test if they sum up to $h$.
 A sample python implementation could be the following:
 
 ```python
-1.   for i in range(len(sticks)):
-2.      for j in range(i+1, len(sticks)):
-3.          if sticks[i]+sticks[j] == h:
-4.              print(sticks[i],sticks[j])
-5.              exit()
-6.   print("impossible!")
+for i in range(len(sticks)):
+  for j in range(i+1, len(sticks)):
+    if sticks[i]+sticks[j] == h:
+      print(sticks[i],sticks[j])
+      exit()
+print("impossible!")
 ``` 
 
 Note that the second for loop starts at the stick after stick $i$ to avert
@@ -101,16 +101,16 @@ this case, you can use a Set, a data structure which allows for O(log $n$)
 lookups. The resulting code could look like this in python:
 
 ```python
- 1.    stick_set = set(sticks)
- 2.    for h_i in sticks:
- 3.        if h_i * 2 == h:
- 4.            if sticks.count(h_i) >= 2:
- 5.                print(h_i, h_i)
- 6.                exit()
- 7.        elif h - h_i in stick_set:
- 8.            print(h_i, h - h_i)
- 9.            exit()
-10.     print("impossible!")
+stick_set = set(sticks)
+for h_i in sticks:
+  if h_i * 2 == h:
+    if sticks.count(h_i) >= 2:
+      print(h_i, h_i)
+      exit()
+  elif h - h_i in stick_set:
+    print(h_i, h - h_i)
+    exit()
+print("impossible!")
 ```
 
 The complexity of this solution is O($n$ \* log $n$), as the *for* loop iterates
@@ -136,8 +136,8 @@ For our problem, the input might look like the following:
 A simple program to read said input would be:
 
 ```python
-  for i in range(2):
-    x = input()
+for i in range(2):
+  x = input()
 ```
 
 you get x = "4 5" and x = "1 2 3 4" respectively. But you probably dont want to
@@ -168,19 +168,19 @@ sticks = [int(i) for i in input.split()]
 The complete program for our problem would be:
 
 ```python
- 1.    n, h = [int(i) for i in input.split()]
- 2.    sticks = [int(i) for i in input.split()]
- 3.
- 1.    stick_set = set(sticks)
- 2.    for h_i in sticks:
- 3.        if h_i * 2 == h:
- 4.            if sticks.count(h_i) >= 2:
- 5.                print(h_i, h_i)
- 6.                exit()
-1.         elif h - h_i in stick_set:
-2.             print(h_i, h - h_i)
-3.             exit()
-4.      print("impossible!")
+n, h = [int(i) for i in input.split()]
+sticks = [int(i) for i in input.split()]
+
+stick_set = set(sticks)
+for h_i in sticks:
+  if h_i * 2 == h:
+    if sticks.count(h_i) >= 2:
+      print(h_i, h_i)
+      exit()
+  elif h - h_i in stick_set:
+    print(h_i, h - h_i)
+    exit()
+print("impossible!")
 ```
 
 Now you know all the basics to solve some simple competetive programing
