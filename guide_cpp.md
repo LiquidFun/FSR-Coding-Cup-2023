@@ -1,8 +1,6 @@
 # Tips and introductory information
 
-This guide contains python code. A seperate guide is given for c++. You should
-use the programming language that you are most comfortable with in this contest.
-If you are still not sure, we suggest to use python.
+This guide contains c++ code. A seperate guide is given for python. You should use the programming language that you are most comfortable with in this contest. If you are still not sure, we suggest to use python.
 
 ## Basic problem structure
 
@@ -56,14 +54,17 @@ sticks and test if they sum up to $h$.
 
 A sample python implementation could be the following:
 
-```python
-1.   for i in range(len(sticks)):
-2.      for j in range(i+1, len(sticks)):
-3.          if sticks[i]+sticks[j] == h:
-4.              print(sticks[i],sticks[j])
-5.              exit()
-6.   print("impossible!")
-``` 
+```cpp
+1.   for(int i = 0; i < sticks.size(); i++) {
+2.      for(int j = i+1; j < sticks.size(); j++) {
+3.          if(sticks[i]+sticks[j] == h) {
+4.              cout << sticks[i] << " " << sticks[j] << "\n";
+5.              return 0;
+6.          }
+7.      }
+8.   }
+7.   cout << "impossible!" << "\n";
+```
 
 Note that the second for loop starts at the stick after stick $i$ to avert
 testing pairs of sticks twice. Also note that starting at index 0 with both
@@ -74,7 +75,7 @@ the same stick stacked on top of another twice would add up to the bottle. This
 is not allowed. A big skill in competetitive programming is to find and fix
 these small inaccuracies.
 
-The `exit()` on line 5 makes sure that you do not print multiple legible pairs
+The `return 0;` on line 5 makes sure that you do not print multiple legible pairs
 of sticks -- which would be counted as a wrong submission!
 
 Now to the problem with the given solution. A competetitive programming solution
@@ -100,17 +101,24 @@ stick exists in the given list, you can solve the whole problem much faster! In
 this case, you can use a Set, a data structure which allows for O(log $n$)
 lookups. The resulting code could look like this in python:
 
-```python
- 1.    stick_set = set(sticks)
- 2.    for h_i in sticks:
- 3.        if h_i * 2 == h:
- 4.            if sticks.count(h_i) >= 2:
- 5.                print(h_i, h_i)
- 6.                exit()
- 7.        elif h - h_i in stick_set:
- 8.            print(h_i, h - h_i)
- 9.            exit()
-10.     print("impossible!")
+```cpp
+ 1.   set<int> stick_set;
+ 2.   for(int i = 0; i < sticks.size(); i++) {
+ 3.     stick_set.insert(sticks[i])
+ 4.   }
+ 5.
+ 6.   for(int i = 0; i < sticks.size(); i++) {
+ 7.     if(2*sticks[i] == h) {
+ 8.       if(sticks.count(h_i) >= 2) {
+ 9.         cout << sticks[i] << " " << sticks[j] << "\n";
+10.         return 0;
+11.       }
+12.     } else if(set.contains(h - sticks[i])) {
+13.       cout << sticks[i] << " " << sticks[j] << "\n";
+14.       return 0;
+15.     }
+16.   }
+17.   cout << "impossible!" << "\n";
 ```
 
 The complexity of this solution is O($n$ \* log $n$), as the *for* loop iterates
@@ -122,65 +130,84 @@ height. This time the solution is correct and fast enough! Time to submit.
 
 ## Reading input
 
-We have one last thing to discuss before you are ready to solve problems:
-Reading input from stdin. In python, you read input using the input() function.
-It takes a whole line of input from stdin and returns it as a string.
+We have one last thing to discuss before you are ready to solve some problems:
+Reading input from stdin. In python, you read input using the `cin` keyword.
+It takes the next element and parses it into a variable.
 
 For our problem, the input might look like the following:
 
-```python
+```cpp
 4 5
 1 2 3 4
 ```
 
 A simple program to read said input would be:
 
-```python
-  for i in range(2):
-    x = input()
+```cpp
+#include <vector>;
+
+int n, h;
+cin >> h >> n;
+vector<int> sticks;
+for(int i = 0; i<n; i++) {
+  int stick;
+  cin >> stick;
+  sticks.push_back(stick);
+}
 ```
 
-you get x = "4 5" and x = "1 2 3 4" respectively. But you probably dont want to
-work directly with strings but with integers instead. To achieve this, we first
-need to split the string into the seperate numbers and then convert them into
-integers.
+The first `cin` reads in the integers n and h and the second one fills the vector.
+A vector is simply a list which can only be appended to. Use `vec.push_back(x)` to
+append an element and `vec[i]` to address them. You could alternatively use an
+array and initialize it with highest possible n. (Note that a c++ array can not be initialized with dynamic size.) The code for this would be the following:
 
-```python
-line = input.split()
-line = [int(i) for i in line]
-n = line[0], h = line[1]
-
-sticks = input.split()
-sticks = [int(i) for i in line]
-```
-
-Now n is the first number of the first line, h is the second number of the first
-line and sticks is a list of all numbers on the second line. Just as the input
-states. :)
-
-Note that the above code can be shortened to
-
-```python
-n, h = [int(i) for i in input.split()]
-sticks = [int(i) for i in input.split()]
+```cpp
+int n, h;
+cin >> h >> n;
+int sticks[100000];
+for(int i = 0; i<n; i++) {
+  int stick;
+  cin >> stick;
+  sticks[i] = stick;
+}
 ```
 
 The complete program for our problem would be:
 
-```python
- 1.    n, h = [int(i) for i in input.split()]
- 2.    sticks = [int(i) for i in input.split()]
- 3.
- 1.    stick_set = set(sticks)
- 2.    for h_i in sticks:
- 3.        if h_i * 2 == h:
- 4.            if sticks.count(h_i) >= 2:
- 5.                print(h_i, h_i)
- 6.                exit()
-1.         elif h - h_i in stick_set:
-2.             print(h_i, h - h_i)
-3.             exit()
-4.      print("impossible!")
+```cpp
+using namespace std;
+
+int main() {
+  // input
+  int n, h;
+  cin >> h >> n;
+  int sticks[100000];
+  for(int i = 0; i<n; i++) {
+    int stick;
+    cin >> stick;
+    sticks[i] = stick;
+  }
+
+  // solving the problem
+  set<int> stick_set;
+  for(int i = 0; i < sticks.size(); i++) {
+    stick_set.insert(sticks[i])
+  }
+  for(int i = 0; i < sticks.size(); i++) {
+    if(2*sticks[i] == h) {
+      if(sticks.count(h_i) >= 2) {
+        cout << sticks[i] << " " << sticks[j] << "\n";
+        return 0;
+      }
+    } else if(set.contains(h - sticks[i])) {
+      cout << sticks[i] << " " << sticks[j] << "\n";
+      return 0;
+    }
+  }
+  cout << "impossible!" << "\n";
+  
+  return 0;
+}
 ```
 
 Now you know all the basics to solve some simple competetive programing
