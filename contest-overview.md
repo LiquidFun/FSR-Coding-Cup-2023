@@ -1,4 +1,4 @@
-# FSR Coding Cup
+# FSR Coding Cup 2023 🧑‍💻
 
 ![](POSTER)
 
@@ -14,8 +14,7 @@
 
 * **Where?** 
     * On-site: **Konrad-Zuse-Haus** (institute of computer science) **Albert-Einstein-Straße 22, 18059** Room **301**.
-    * Online (ineligible for prizes): TODO url
-
+    * Online (ineligible for prizes): https://codeforces.com/group/18t0uBAFk1/contests (create an account on codeforces and register to the contest as a participant a couple of hours before the contest)
 ## "Really? But I'm just a newbie programmer?"
 
 Everyone who can code at least a little bit is able to participate. There will be 12 problems to solve, some of them will be easy enough that anyone with any coding experience can solve them. To encourage this there will be a **prize for first-year students** ("erstis"). In fact, internet access is allowed during this contest, so if you are a beginner you don't have to know any programming language by memory (communicating with other teams or asking for solutions is strongly disallowed though, see below for exact rules).
@@ -86,7 +85,7 @@ Each team may have between **1** to **3** students, however each team will only 
 
 However, sometimes multiple teammates may only distract you. Everyone can decide for themselves what is more fun to them and we believe that any team whether of size 1 or 3 has equal chances to win. Therefore all teams will be evaluated in the same leaderboard. 
 
-If you are looking for a teammate, but do not know anyone who wants to participate please reach out to $EMAIL (TODO).
+If you are looking for a teammate, but do not know anyone who wants to participate please reach out to *brutenis dot gliwa at uni-rostock.de*.
 
 
 
@@ -149,7 +148,6 @@ You **may** bring to the contest:
 * Your own keyboard and/or mouse (avoid loud keyboards such as ones with MX-Blue switches, we may ask you to use the provided keyboard in such a case). You may not use more than 1 keyboard or mouse at the same time.
 * Any written materials you like: books, handwritten notes, paper, pens and pencils
 * Drinks (however these are provided for you as well) 
-* Non-sticky Snacks (TODO geht das?)
 * A calculator (it is unlikely you will need one)
 
 You **may** use:
@@ -160,9 +158,56 @@ You **may** use:
 
 ### System
 
-Ubuntu 22.04
+#### Hardware
 
-TODO
+TBA
+
+#### Software
+
+The software configuration will consist of the following:
+
+* OS:
+    * Ubuntu 22.04 LTS Linux (64-bit)
+* Desktop Environment:
+    * Gnome
+    * Keyboard layouts:
+        * en (default)
+        * de
+        * (others available via settings)
+* Editors:
+    * vim
+    * gvim
+    * nano
+    * neovim
+    * emacs
+    * gedit
+    * geany
+    * kate
+* IDEs:
+    * PyCharm Community
+        * Version: 2022.3
+        * Plugins:
+            * IdeaVim
+    * IntelliJ Community
+        * Version: 2022.3
+        * Plugins:
+            * IdeaVim
+            * Rust
+            * Scala
+    * Eclipse
+        * Version: 2022-12
+    * Visual Studio Code
+        * Version: 1.74
+        * Plugins:
+            * C/C++ - Microsoft
+            * C# - Microsoft
+            * Code Runner - Jun Han
+            * Debugger for Java - Microsoft
+            * ESLint - Microsoft
+            * Language Support for Java - Red Hat
+            * Python - Microsoft
+            * Haskell - Haskell
+            * Kotlin - fwcd
 
 ### Verdicts
 
@@ -195,8 +240,8 @@ Note that the organizers may not answer a question if they deem it is sufficient
 
 This contest is not a one-off, in fact there is a huge community of competitive programmers. The ACM-ICPC competitions are yearly competitions where 60000 students participate annually. The finals are notoriously hard to get to, so there are regionals, for example there is the NWERC (north western europe) and GCPC (germany-only) contests. These competitions are a big deal for many people, including me. I have been participating in such contests for many years and have also participated in the NWERC for the last 3 years. 
 
-Unfortunately, despite Uni-Rostock winning the NWERC in 2014(TODO) there has been barely any activity here for this type of contests since. This contest is a opportunity to gauge interest in such things and to possibly spark a new team of active people who want to compete and who want to solve problems with the same joy as me.
+Unfortunately, despite Uni-Rostock winning the NWERC in [2012](https://idw-online.de/de/news509736) there has been barely any activity here for this type of contests since. This contest is a opportunity to gauge interest in such things and to possibly spark a new team of active people who want to compete and who want to solve problems with the same joy as me.
 
 ## Questions
 
-If you have questions email me at brutenis dot gliwa at uni-rostock.de.
+If you have questions email me at *brutenis dot gliwa at uni-rostock.de*.
