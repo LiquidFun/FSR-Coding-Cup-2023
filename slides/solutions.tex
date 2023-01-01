@@ -102,17 +102,26 @@
     \frametitle{ExtravagantVoyage}
     \begin{block}{Problem}
         \begin{itemize}
-            \item 
+            \item Given $n$ items with happiness $H$ and volume $V$
+            \item Choose items with cumulative weight $w$
+            \item Also called 0-1-Knapsack
         \end{itemize}
     \end{block}
     \begin{block}{Solution}
         \begin{itemize}
-            \item 
+            \item Recursive DP solution:
+            \item Go through n items and start with remaining weight $r$ = $w$.
+            \item Recursively solve:
+            \begin{itemize}
+            \item taking item: $r$ -= $W_i$; $h$ += $H_i$.
+            \item leaving item: $r$, $h$ unchanged.
+            \end{itemize}
+            \item Save states in dp-table.
         \end{itemize}
     \end{block}
     \begin{block}{Gotchas}
         \begin{itemize}
-            \item 
+            \item Not using a dp-table results in time limit exceeded.
         \end{itemize}
     \end{block}
 \end{frame}
