@@ -1,0 +1,251 @@
+\documentclass{beamer}
+\usetheme{Copenhagen}
+%Information to be included in the title page:
+\title{Sample title}
+\author{Anonymous}
+\institute{Overleaf}
+\date{2021}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Aquarium Maze}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Input: grid of $"."$ and $"\#"$ squares.
+            \item Grid is filled with water from the top.
+            \item Water can move down, left and right.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Can simulate water by starting at a top square and then traversing the graph e.g. using BFS or DFS
+            \begin{enumerate}
+                \item if square $== "."$ and not yet visited
+                \item visit all neighbours recursively
+                \item add 1 to awnser
+            \end{enumerate}
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item Need to start once at every point on the top.
+            \item Otherwise we might miss some air bubbles.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{BicycleLock}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Input: Initial lock position $I$ and final lock position $F$ of length n.
+            \item Move to final position by always turning two consecutive dials at once.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Dial 1 can only be turned by turning dials 1 and 2.
+            \item It needs to be turned from $I_1$ to $I_2$.
+            \item After turning that, we have a new subproblem of length $n-1$
+            \item We can solve this recursively
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item Always two ways to turn dials: Clockwise or Anti-clockwise.
+            \item Need to check if dial n is at the right positition in the end.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{CompilersBrackets}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Check if given bracket pattern makes sense.
+            \item $\{\{\}\{\}$ Does not make sense.
+            \item $\{\{\}\{\{\}\}\}$ Does make sense.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Count number of currently open brackets.
+            \item begin with open $= 0$
+            \item $"\{" \rightarrow$ open$++$
+            \item $"\}" \rightarrow$ open$--$
+            \item pattern invalid if open $< 0$ at any time.
+            \item pattern invalid if open $!= 0$ in the end.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{DamConstruction}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Given $(n_1, n_2, n_4)$ lego bricks of size 1, 2 and 4.
+            \item Build the highest wall of width $w$.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Should always use bricks of higher size first to maintain flexibility.
+            \item Greedy solution by using $n_4$ bricks, then filling up with $n_2$, then with $n_1$.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ExtravagantVoyage}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{FascinatingBooks}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Check if given list of strings contains every letter of the alphabet.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Can concatenate strings and solve for a single string.
+            \item For each char:
+            \item If char is letter: Add lowercase version to set.
+            \item Check if length of set is 26.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item Capitalization does not matter.
+            \item Strings do not only contain letters
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GoingHome}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{HiddenWords}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item TODO: make description more clear.
+            \item Given n strings, find a string that contains all n strings in the right order and where no character is part of 3 strings.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Start with two first strings $X$ and $Y$.
+            \item If $Y$ starts with $X$:
+            \item Add $X$ to solutionword, continue with rest of $Y$ and next string.
+            \item Else: Remove first letter of $X$ and repeat process.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{IntuitiveCitations}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Given a list of names. Print the lexicographically smallest surname and add " et al.".
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Remove part before space (prename).
+            \item Find the lexicographically smallest string by sorting and taking the first element.
+            \item print string + " et al.".
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{JollyFishing}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{KeyboardRobot}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{LeaderboardPrediction}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Given the times you need to solve each of the n problems.
+            \item Determine the minimal penalty you can get on the contest.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item The time you needed for the first problem will be added to the penalty of all problems you solve.
+            \item It is always best to solve shortest problems first.
+            \item Greedy solution: Sort problems by length, then simulate.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\end{document}
