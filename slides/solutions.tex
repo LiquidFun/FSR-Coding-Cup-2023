@@ -225,17 +225,22 @@
     \frametitle{KeyboardRobot}
     \begin{block}{Problem}
         \begin{itemize}
-            \item 
+            \item Given a 6x6 keyboard layout of letters and some text.
+            \item Find a way to move 2 fingers simultaneously such that the time is minimal to type the given text.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Insights}
+        \begin{itemize}
+            \item Insight \#1: the text is short, only 200 letters, so the maximum time is $(5+5)\cdot200 = 2000$
+            \item Insight \#2: we can simulate it, but need fast way of prioritising interesting states
         \end{itemize}
     \end{block}
     \begin{block}{Solution}
         \begin{itemize}
-            \item 
-        \end{itemize}
-    \end{block}
-    \begin{block}{Gotchas}
-        \begin{itemize}
-            \item 
+            \item Use a priority queue to track every "reasonable" reachable state
+            \item A state is: (time, index in text, finger 1\&2 target position and remaining movement)
+            \item From every state put 2 new states inside the priority queue: what if either finger 1 or 2 moves to the next letter
+            \item Keep track of how much time the fingers are standing still, so that you can move them retroactively
         \end{itemize}
     \end{block}
 \end{frame}
