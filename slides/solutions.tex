@@ -16,14 +16,14 @@
         \begin{itemize}
             \item Given a list of names. Print the lexicographically smallest surname and add \texttt{" et al."}.
         \end{itemize}
-    \end{block}
-    \begin{block}{Solution}
+    \end{block} \pause
+    \begin{block}{Solution} 
         \begin{itemize}
-            \item Remove part before space (prename).
-            \item Find the lexicographically smallest string by sorting and taking the first element.
+            \item Remove part before space (forename). \pause
+            \item Find the lexicographically smallest string by sorting and taking the first element. \pause
             \item Print string + \texttt{" et al."}.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -32,21 +32,23 @@
         \begin{itemize}
             \item Check if given list of strings contains every letter of the alphabet.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
-            \item Can concatenate strings and solve for a single string.
+            \item Can concatenate strings and solve for a single string. \pause
             \item For each character:
-            \item If character is letter: Add as lowercase to set.
-            \item Check if length of set is 26.
+            \begin{itemize}
+            \item If character is letter: Add as lowercase to set. \pause
+            \end{itemize}
+        \item Check if length of set is 26.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
-            \item Capitalization does not matter.
+            \item Capitalization does not matter. \pause
             \item Strings do not only contain letters.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -56,35 +58,42 @@
             \item Given the times you need to solve each of the $n$ problems.
             \item Determine the minimal penalty you can get on the contest.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item The time you needed for the first problem will be added to the penalty of all problems you solve.
+            \pause
             \item It is always best to solve shortest problems first.
+            \pause
             \item Greedy solution: Sort problems by length, then simulate.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
     \frametitle{Compilers Brackets}
     \begin{block}{Problem}
         \begin{itemize}
-            \item Check if given bracket pattern makes sense.
-            \item {\tt"\{\{\}\{\}"} Does not make sense.
-            \item {\tt"\{\{\}\{\{\}\}\}"} Does make sense.
+            \item Check if given bracket pattern is valid.
+            \item {\tt"\{\{\}\{\}"} is not valid.
+            \item {\tt"\{\{\}\{\{\}\}\}"} is valid.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Count number of currently open brackets.
+            \pause
             \item Begin with {\tt open = 0}
+            \pause
             \item {\tt"\{"} $\rightarrow$ {\tt open++}
+            \pause
             \item {\tt"\}"} $\rightarrow$ {\tt open--}
+            \pause
             \item Pattern invalid if {\tt open < 0} at any time.
+            \pause
             \item Pattern invalid if {\tt open != 0} in the end.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -94,18 +103,19 @@
             \item Given $(n_1, n_2, n_4)$ lego bricks of size 1, 2 and 4.
             \item Build the highest wall of width $w$.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Should always use bricks of higher size first to maintain flexibility.
+            \pause
             \item Greedy solution by using $n_4$ bricks, then filling up with $n_2$, then with $n_1$.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
             \item In slower languages (like Python) you need to calculate in 1 step how many bricks of each type you need.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -115,21 +125,25 @@
             \item Input: Initial lock position $I$ and final lock position $F$ of length $n$.
             \item Move to final position by always turning two consecutive dials at once.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Dial 1 can only be turned by turning dials 1 and 2.
+            \pause
             \item It needs to be turned from $I_1$ to $I_2$.
+            \pause
             \item After turning that, we have a new subproblem of length $n-1$.
+            \pause
             \item We can solve this recursively.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
             \item Always two ways to turn dials: Clockwise or Anti-clockwise.
+            \pause
             \item Need to check if last dial is at the right positition in the end.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -140,23 +154,29 @@
             \item Grid is filled with water from the top.
             \item Water can move down, left and right.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
-            \item Can simulate water by starting at a top square and then traversing the graph e.g. using BFS or DFS
-            \begin{enumerate}
+            \item Can simulate water by starting at a top square and then traversing the graph e.g. using BFS or DFS.
+            \pause
+            \item For each top square:
+            \begin{itemize}
                 \item if square $== "."$ and not yet visited:
-                \item add 1 to answer.
-                \item visit all left, right and bottom neighbours recursively.
-            \end{enumerate}
+                \begin{itemize}
+                    \item add 1 to answer.
+                    \pause
+                    \item visit left, right and bottom neighbour recursively.
+                \end{itemize}
+            \end{itemize}
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
             \item Need to start once at every point on the top.
+            \pause
             \item Otherwise we might miss some air bubbles.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 
@@ -168,15 +188,18 @@
             \item Given $n$ strings $s_1$ ... $s_n$.
             \item Find a string $S$ that contains all $n$ strings in consecutive order and where no character is part of 3 strings.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Start with two first strings $s_1$ and $s_2$.
+            \pause
             \item If $s_2$ starts with $s_1$:
+            \pause
             \item Add $s_1$ to $S$, continue with rest of $s_2$ and next string.
+            \pause
             \item Else: remove first letter of $s_1$ and repeat process.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -187,15 +210,18 @@
             \item Fishes will only reproduce when not being fished.
             \item After the year, there need to be at least as many fishes as in the beginning.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item It is always better to not allow fishing for the first part of the year and then allow fishing for the rest of the year.
+            \pause
             \item (If we did not allow fishing after a day where we did, we would get a higher score by swapping the two days).
+            \pause
             \item Thus we only need to determine the day we start allowing fishing.
+            \pause
             \item Can simulate every 365 possible days (or use Ternary Search).
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -206,24 +232,28 @@
             \item Choose items with cumulative weight $w$.
             \item Also called 0-1-Knapsack.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Recursive DP solution:
             \item Go through $n$ items and start with remaining weight $r$ = $w$.
+            \pause
             \item Recursively solve:
+            \pause
             \begin{itemize}
                 \item taking item: $r$ -= $W_i$; $h$ += $H_i$.
+                \pause
                 \item leaving item: $r$, $h$ unchanged.
             \end{itemize}
+            \pause
             \item Save states in dp-table.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
             \item Not using a dp-table results in time limit exceeded.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \begin{frame}
@@ -232,18 +262,19 @@
         \begin{itemize}
             \item Given different train connections, find the shortest time to get from Rostock to the given city.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Solution}
         \begin{itemize}
             \item Can be solved using any shortest path algorithms that allows for edge weights e.g. Dijkstra.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Gotchas}
         \begin{itemize}
             \item The input is rather complicated and has to be parsed into a graph structure first.
+            \pause
             \item Need to find the right time to take a connection which is driven multiple times.
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 
@@ -255,23 +286,27 @@
             \item Given a 6x6 keyboard layout of letters and some text.
             \item Find a way to move 2 fingers simultaneously such that the time is minimal to type the given text.
         \end{itemize}
-    \end{block}
+    \end{block} \pause
     \begin{block}{Insights}
         \begin{itemize}
             \item Insight \#1: the text is short, only 200 letters, so the maximum time is $(5+5)\cdot200 = 2000$
+            \pause
             \item Insight \#2: we can simulate it, but need fast way of prioritising interesting states
+            \pause
             \item Insight \#3: grid is unhelpful, save as basic graph instead: 
                 {\tt dist[(from\_pos, to\_pos)] = distance}\\ 
                 {\tt letter\_to\_pos[letter] = pos}\\
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 \begin{frame}
     \frametitle{Keyboard Robot}
     \begin{block}{Solution}
         \begin{itemize}
             \item Use a priority queue to track every "reasonable" state
+            \pause
             \item Initial state is {\tt (0, 0, (0, 0), 0, (0, 0), 0)}
+            \pause
             \item A state is {\tt(time, index, pos1, rem1, pos2, rem2)}
             \begin{enumerate}
                 \item $time$ is the time since start of simulation
@@ -280,11 +315,14 @@
                 \item $rem_{i}$ is the remaining time to move for the $i$-th finger (if negative it means it has been idle for some time and can be moved retroactively)
 
             \end{enumerate}
+            \pause
             \item From every state put 2 new states inside the priority queue: what if either finger 1 or finger 2 moves to the next letter
+            \pause
             \item Only states where either $rem1$ or $rem2$ are 0 should be put in the priority queue
+            \pause
             \item Simulate until some index is at the end of the char sequence
         \end{itemize}
-    \end{block}
+    \end{block} 
 \end{frame}
 
 \end{document}
