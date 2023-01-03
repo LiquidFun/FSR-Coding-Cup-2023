@@ -11,23 +11,23 @@
 \frame{\titlepage}
 
 \begin{frame}
-    \frametitle{IntuitiveCitations}
+    \frametitle{Intuitive Citations}
     \begin{block}{Problem}
         \begin{itemize}
-            \item Given a list of names. Print the lexicographically smallest surname and add " et al.".
+            \item Given a list of names. Print the lexicographically smallest surname and add \texttt{" et al."}.
         \end{itemize}
     \end{block}
     \begin{block}{Solution}
         \begin{itemize}
             \item Remove part before space (prename).
             \item Find the lexicographically smallest string by sorting and taking the first element.
-            \item print string + " et al.".
+            \item Print string + \texttt{" et al."}.
         \end{itemize}
     \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{FascinatingBooks}
+    \frametitle{Fascinating Books}
     \begin{block}{Problem}
         \begin{itemize}
             \item Check if given list of strings contains every letter of the alphabet.
@@ -36,24 +36,24 @@
     \begin{block}{Solution}
         \begin{itemize}
             \item Can concatenate strings and solve for a single string.
-            \item For each char:
-            \item If char is letter: Add lowercase version to set.
+            \item For each character:
+            \item If character is letter: Add as lowercase to set.
             \item Check if length of set is 26.
         \end{itemize}
     \end{block}
     \begin{block}{Gotchas}
         \begin{itemize}
             \item Capitalization does not matter.
-            \item Strings do not only contain letters
+            \item Strings do not only contain letters.
         \end{itemize}
     \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{LeaderboardPrediction}
+    \frametitle{Leaderboard Prediction}
     \begin{block}{Problem}
         \begin{itemize}
-            \item Given the times you need to solve each of the n problems.
+            \item Given the times you need to solve each of the $n$ problems.
             \item Determine the minimal penalty you can get on the contest.
         \end{itemize}
     \end{block}
@@ -67,28 +67,28 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{CompilersBrackets}
+    \frametitle{Compilers Brackets}
     \begin{block}{Problem}
         \begin{itemize}
             \item Check if given bracket pattern makes sense.
-            \item $\{\{\}\{\}$ Does not make sense.
-            \item $\{\{\}\{\{\}\}\}$ Does make sense.
+            \item {\tt"\{\{\}\{\}"} Does not make sense.
+            \item {\tt"\{\{\}\{\{\}\}\}"} Does make sense.
         \end{itemize}
     \end{block}
     \begin{block}{Solution}
         \begin{itemize}
             \item Count number of currently open brackets.
-            \item begin with open $= 0$
-            \item $"\{" \rightarrow$ open$++$
-            \item $"\}" \rightarrow$ open$--$
-            \item pattern invalid if open $< 0$ at any time.
-            \item pattern invalid if open $!= 0$ in the end.
+            \item Begin with {\tt open = 0}
+            \item {\tt"\{"} $\rightarrow$ {\tt open++}
+            \item {\tt"\}"} $\rightarrow$ {\tt open--}
+            \item Pattern invalid if {\tt open < 0} at any time.
+            \item Pattern invalid if {\tt open != 0} in the end.
         \end{itemize}
     \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{DamConstruction}
+    \frametitle{Dam Construction}
     \begin{block}{Problem}
         \begin{itemize}
             \item Given $(n_1, n_2, n_4)$ lego bricks of size 1, 2 and 4.
@@ -101,13 +101,18 @@
             \item Greedy solution by using $n_4$ bricks, then filling up with $n_2$, then with $n_1$.
         \end{itemize}
     \end{block}
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item In slower languages (like Python) you need to calculate in 1 step how many bricks of each type you need.
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{BicycleLock}
+    \frametitle{Bicycle Lock}
     \begin{block}{Problem}
         \begin{itemize}
-            \item Input: Initial lock position $I$ and final lock position $F$ of length n.
+            \item Input: Initial lock position $I$ and final lock position $F$ of length $n$.
             \item Move to final position by always turning two consecutive dials at once.
         \end{itemize}
     \end{block}
@@ -115,20 +120,20 @@
         \begin{itemize}
             \item Dial 1 can only be turned by turning dials 1 and 2.
             \item It needs to be turned from $I_1$ to $I_2$.
-            \item After turning that, we have a new subproblem of length $n-1$
-            \item We can solve this recursively
+            \item After turning that, we have a new subproblem of length $n-1$.
+            \item We can solve this recursively.
         \end{itemize}
     \end{block}
     \begin{block}{Gotchas}
         \begin{itemize}
             \item Always two ways to turn dials: Clockwise or Anti-clockwise.
-            \item Need to check if dial n is at the right positition in the end.
+            \item Need to check if last dial is at the right positition in the end.
         \end{itemize}
     \end{block}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Aquarium Maze}
+    \frametitle{Aquarium  Maze}
     \begin{block}{Problem}
         \begin{itemize}
             \item Input: grid of $"."$ and $"\#"$ squares.
@@ -140,9 +145,9 @@
         \begin{itemize}
             \item Can simulate water by starting at a top square and then traversing the graph e.g. using BFS or DFS
             \begin{enumerate}
-                \item if square $== "."$ and not yet visited
-                \item visit all neighbours recursively
-                \item add 1 to awnser
+                \item if square $== "."$ and not yet visited:
+                \item add 1 to answer.
+                \item visit all left, right and bottom neighbours recursively.
             \end{enumerate}
         \end{itemize}
     \end{block}
@@ -154,23 +159,62 @@
     \end{block}
 \end{frame}
 
+
+
 \begin{frame}
-    \frametitle{ExtravagantVoyage}
+    \frametitle{Hidden Words}
     \begin{block}{Problem}
         \begin{itemize}
-            \item Given $n$ items with happiness $H$ and volume $V$
-            \item Choose items with cumulative weight $w$
-            \item Also called 0-1-Knapsack
+            \item Given $n$ strings $s_1$ ... $s_n$.
+            \item Find a string $S$ that contains all $n$ strings in consecutive order and where no character is part of 3 strings.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Start with two first strings $s_1$ and $s_2$.
+            \item If $s_2$ starts with $s_1$:
+            \item Add $s_1$ to $S$, continue with rest of $s_2$ and next string.
+            \item Else: remove first letter of $s_1$ and repeat process.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Jolly Fishing}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Choose if fishers are allowed to fish on each day of the year.
+            \item Fishes will only reproduce when not being fished.
+            \item After the year, there need to be at least as many fishes as in the beginning.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item It is always better to not allow fishing for the first part of the year and then allow fishing for the rest of the year.
+            \item (If we did not allow fishing after a day where we did, we would get a higher score by swapping the two days).
+            \item Thus we only need to determine the day we start allowing fishing.
+            \item Can simulate every 365 possible days (or use Ternary Search).
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Extravagant Voyage}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Given $n$ items with happiness $H$ and volume $V$.
+            \item Choose items with cumulative weight $w$.
+            \item Also called 0-1-Knapsack.
         \end{itemize}
     \end{block}
     \begin{block}{Solution}
         \begin{itemize}
             \item Recursive DP solution:
-            \item Go through n items and start with remaining weight $r$ = $w$.
+            \item Go through $n$ items and start with remaining weight $r$ = $w$.
             \item Recursively solve:
             \begin{itemize}
-            \item taking item: $r$ -= $W_i$; $h$ += $H_i$.
-            \item leaving item: $r$, $h$ unchanged.
+                \item taking item: $r$ -= $W_i$; $h$ += $H_i$.
+                \item leaving item: $r$, $h$ unchanged.
             \end{itemize}
             \item Save states in dp-table.
         \end{itemize}
@@ -182,46 +226,8 @@
     \end{block}
 \end{frame}
 
-
-
 \begin{frame}
-    \frametitle{HiddenWords}
-    \begin{block}{Problem}
-        \begin{itemize}
-            \item Given n strings, find a string that contains all n strings in consecutive order and where no character is part of 3 strings.
-        \end{itemize}
-    \end{block}
-    \begin{block}{Solution}
-        \begin{itemize}
-            \item Start with two first strings $X$ and $Y$.
-            \item If $Y$ starts with $X$:
-            \item Add $X$ to solutionword, continue with rest of $Y$ and next string.
-            \item Else: Remove first letter of $X$ and repeat process.
-        \end{itemize}
-    \end{block}
-\end{frame}
-
-\begin{frame}
-    \frametitle{JollyFishing}
-    \begin{block}{Problem}
-        \begin{itemize}
-            \item Choose if fishers are allowed to fish on each day of the year.
-            \item Fishes will reproduce when not being fished.
-            \item After the year, there need to be at least as many fishes as in the beginning.
-        \end{itemize}
-    \end{block}
-    \begin{block}{Solution}
-        \begin{itemize}
-            \item It is always better to not allow fishing for the first part of the year and then allow fishing for the rest of the year
-            \item (If we did not allow fishing after a day where we did, we would get a higher score by swapping the two days)
-            \item Thus we only need to determine the day we start allowing fishing.
-            \item Can simulate every 365 possible days (or use Ternary Search).
-        \end{itemize}
-    \end{block}
-\end{frame}
-
-\begin{frame}
-    \frametitle{GoingHome}
+    \frametitle{Going Home}
     \begin{block}{Problem}
         \begin{itemize}
             \item Given different train connections, find the shortest time to get from Rostock to the given city.
@@ -243,7 +249,7 @@
 
 
 \begin{frame}
-    \frametitle{KeyboardRobot}
+    \frametitle{Keyboard Robot}
     \begin{block}{Problem}
         \begin{itemize}
             \item Given a 6x6 keyboard layout of letters and some text.
@@ -254,14 +260,29 @@
         \begin{itemize}
             \item Insight \#1: the text is short, only 200 letters, so the maximum time is $(5+5)\cdot200 = 2000$
             \item Insight \#2: we can simulate it, but need fast way of prioritising interesting states
+            \item Insight \#3: grid is unhelpful, save as basic graph instead: 
+                {\tt dist[(from\_pos, to\_pos)] = distance}\\ 
+                {\tt letter\_to\_pos[letter] = pos}\\
         \end{itemize}
     \end{block}
+\end{frame}
+\begin{frame}
+    \frametitle{Keyboard Robot}
     \begin{block}{Solution}
         \begin{itemize}
-            \item Use a priority queue to track every "reasonable" reachable state
-            \item A state is: (time, index in text, finger 1\&2 target position and remaining movement)
-            \item From every state put 2 new states inside the priority queue: what if either finger 1 or 2 moves to the next letter
-            \item Keep track of how much time the fingers are standing still, so that you can move them retroactively
+            \item Use a priority queue to track every "reasonable" state
+            \item Initial state is {\tt (0, 0, (0, 0), 0, (0, 0), 0)}
+            \item A state is {\tt(time, index, pos1, rem1, pos2, rem2)}
+            \begin{enumerate}
+                \item $time$ is the time since start of simulation
+                \item $index$ is the index of the current letter to be typed in the text
+                \item $pos_{i}$ is the position as a tuple of the $i$-th finger
+                \item $rem_{i}$ is the remaining time to move for the $i$-th finger (if negative it means it has been idle for some time and can be moved retroactively)
+
+            \end{enumerate}
+            \item From every state put 2 new states inside the priority queue: what if either finger 1 or finger 2 moves to the next letter
+            \item Only states where either $rem1$ or $rem2$ are 0 should be put in the priority queue
+            \item Simulate until some index is at the end of the char sequence
         \end{itemize}
     \end{block}
 \end{frame}
