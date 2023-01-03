@@ -4,7 +4,12 @@
 
 As part of your new job in the digitalisation of the government of Rostock you are tasked to implement a responsible fishing policy, ``just like the Norwegians do'', you were told. You are supposed to set a policy for a year (365 days) for fishers where you maximize the number of fishes caught, but you make sure that at the end of the year there is still at least as many fish as at the start of the year. 
 
-On each day you can give the fishers a permit to fish, otherwise they are not allowed to fish, and since this is Germany you are sure they won't. On each day of the 365 days the fishers will fish exactly $c‰$ (‰=per mille) fish (i.e. $c / 1000$ of fish will be fished on such a day). On days where fishers are not allowed to fish the fish population will increase by a factor of $b$ per mille (i.e. the fish population will increase by $b / 1000$ fish). On days where fishing is allowed fishes will of course not reproduce, because the fish are too scared when they are being fished.
+On each day you can give the fishers a permit to fish, otherwise they are not allowed to fish, and since this is Germany you are sure they won't. On each day of the 365 days the fishers will fish exactly $c‰$ (‰=per mille) fish (i.e. $c / 1000$ of fish will be fished on such a day). On days where fishers are not allowed to fish the fish population will increase by a factor of $b$ per mille (i.e. the fish population will increase by a factor of $b / 1000$ fish). On days where fishing is allowed fishes will of course not reproduce, because the fish are too scared when they are being fished.
+
+\begin{center}
+  \includegraphics{fisher-small.png} \\
+  \small{A fisher calculating his profits, by DALL-E 2}
+\end{center}
 
 
 ## Input format
