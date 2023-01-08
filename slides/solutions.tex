@@ -2,13 +2,27 @@
 \usetheme{Copenhagen}
 %Information to be included in the title page:
 \title{Solution Slides FSR Coding Cup 2023}
-\author{Marian Zuska, Brutenis Gliwa}
+\author{Brutenis Gliwa, Nick Kotsakidis, Marian Zuska}
 \institute{Universität Rostock}
 \date{2023}
 
 \begin{document}
 
 \frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Pizza}
+    \begin{itemize}
+        \item Sponsored by PLANET AI GmbH (planet-ai.de):
+        \item 3*Margharita
+        \item 2*Salami
+        \item 2*Hawaii
+        \item 1*Beef
+        \item 1*Vegetarisch
+        \item 1*Mozarella
+        \item 1*Hot Dog
+    \end{itemize}
+\end{frame}
 
 \begin{frame}
     \frametitle{Intuitive Citations}
@@ -22,6 +36,32 @@
             \item Remove part before space (forename). \pause
             \item Find the lexicographically smallest string by sorting and taking the first element. \pause
             \item Print string + \texttt{" et al."}.
+        \end{itemize}
+    \end{block} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Compilers Brackets}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Check if given bracket pattern is valid.
+            \item {\tt"\{\{\}\{\}"} is not valid.
+            \item {\tt"\{\{\}\{\{\}\}\}"} is valid.
+        \end{itemize}
+    \end{block} \pause
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Count number of currently open brackets.
+            \pause
+            \item Begin with {\tt open = 0}
+            \pause
+            \item {\tt"\{"} $\rightarrow$ {\tt open++}
+            \pause
+            \item {\tt"\}"} $\rightarrow$ {\tt open--}
+            \pause
+            \item Pattern invalid if {\tt open < 0} at any time.
+            \pause
+            \item Pattern invalid if {\tt open != 0} in the end.
         \end{itemize}
     \end{block} 
 \end{frame}
@@ -66,54 +106,6 @@
             \item It is always best to solve shortest problems first.
             \pause
             \item Greedy solution: Sort problems by length, then simulate.
-        \end{itemize}
-    \end{block} 
-\end{frame}
-
-\begin{frame}
-    \frametitle{Compilers Brackets}
-    \begin{block}{Problem}
-        \begin{itemize}
-            \item Check if given bracket pattern is valid.
-            \item {\tt"\{\{\}\{\}"} is not valid.
-            \item {\tt"\{\{\}\{\{\}\}\}"} is valid.
-        \end{itemize}
-    \end{block} \pause
-    \begin{block}{Solution}
-        \begin{itemize}
-            \item Count number of currently open brackets.
-            \pause
-            \item Begin with {\tt open = 0}
-            \pause
-            \item {\tt"\{"} $\rightarrow$ {\tt open++}
-            \pause
-            \item {\tt"\}"} $\rightarrow$ {\tt open--}
-            \pause
-            \item Pattern invalid if {\tt open < 0} at any time.
-            \pause
-            \item Pattern invalid if {\tt open != 0} in the end.
-        \end{itemize}
-    \end{block} 
-\end{frame}
-
-\begin{frame}
-    \frametitle{Dam Construction}
-    \begin{block}{Problem}
-        \begin{itemize}
-            \item Given $(n_1, n_2, n_4)$ lego bricks of size 1, 2 and 4.
-            \item Build the highest wall of width $w$.
-        \end{itemize}
-    \end{block} \pause
-    \begin{block}{Solution}
-        \begin{itemize}
-            \item Should always use bricks of higher size first to maintain flexibility.
-            \pause
-            \item Greedy solution by using $n_4$ bricks, then filling up with $n_2$, then with $n_1$.
-        \end{itemize}
-    \end{block} \pause
-    \begin{block}{Gotchas}
-        \begin{itemize}
-            \item In slower languages (like Python) you need to calculate in 1 step how many bricks of each type you need.
         \end{itemize}
     \end{block} 
 \end{frame}
@@ -179,8 +171,6 @@
     \end{block} 
 \end{frame}
 
-
-
 \begin{frame}
     \frametitle{Hidden Words}
     \begin{block}{Problem}
@@ -220,6 +210,29 @@
             \item Thus we only need to determine the day we start allowing fishing.
             \pause
             \item Can simulate every 365 possible days (or use Ternary Search).
+        \end{itemize}
+    \end{block} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Dam Construction}
+    \begin{block}{Problem}
+        \begin{itemize}
+            \item Given $(n_1, n_2, n_4)$ lego bricks of size 1, 2 and 4.
+            \item Build the highest wall of width $w$.
+        \end{itemize}
+    \end{block} \pause
+    \begin{block}{Solution}
+        \begin{itemize}
+            \item Should always use bricks of higher size first to maintain flexibility.
+            \pause
+            \item Greedy solution by using $n_4$ bricks, then filling up with $n_2$, then with $n_1$.
+        \end{itemize}
+    \end{block} \pause
+    \begin{block}{Gotchas}
+        \begin{itemize}
+            \item In slower languages (like Python) you need to calculate in 1 step how many bricks of each type you need.
+            \item Also the tower can get to heights of $10^9$ which means calculating each row in a single step might still be too slow.
         \end{itemize}
     \end{block} 
 \end{frame}
@@ -323,6 +336,43 @@
             \item Simulate until some index is at the end of the char sequence
         \end{itemize}
     \end{block} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Closing Remarks}
+    \begin{itemize}
+        \item Codeforces offers several online contests per week
+        \pause
+        \item There is a Github repository containing all problem code and our solutions
+        \item Link: https://github.com/LiquidFun/FSR-Coding-Cup-2023
+        \item Feel free to make a pull request with your own solutions so we can add them if you like.
+        \pause
+        \item We also opened a discord server: https://discord.gg/5xgkKyrf
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Closing Remarks}
+    \begin{itemize}
+        \item We hope you had fun today!
+        \item Do you have any suggestions or thing we can improve on?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Scoreboard Reveal}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Prizes}
+    \begin{itemize}
+        \item The first place receives a 150€ powerbank sponsored by Stackmeister GmbH.
+        \item The second place receives a 15€ Amazon gift card per person
+        \item The third place receives a 10€ Amazon gift card per person
+        \item The fourth place receives a 5€ Amazon gift card per person
+        \item The best Ersti team gets 10€ per person
+        \item Also respect for everyone who chose to participate on a Saturday! :D
+    \end{itemize}
 \end{frame}
 
 \end{document}
