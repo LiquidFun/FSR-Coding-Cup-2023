@@ -17,7 +17,7 @@ As you arrive at the KZH with your bicycle, you notice that your lock may be har
 
 \it{Based on a real story.}
 
-You just arrived at the Konrad-Zuse-Haus, it is already 17:13! Your lecture starts in 2 minutes and you still have to lock your bike. Unfortunately it is winter, so you are wearing gloves, which means that inputting the correct code into your bicycle lock will be hard! You realize that because of your gloves you can only turn \it{exactly} \bf{2} dials at once. You bite the bullet this time, sacrificing your bare hands to the bitter cold. But as you step in the 037 you keep wondering, was it possible to unlock the lock without undoing your gloves? And if yes, how many dial turns would you have needed?
+You just arrived at the Konrad-Zuse-Haus, it is already 17:13! Your lecture starts in 2 minutes and you still have to lock your bike. Unfortunately it is winter, so you are wearing gloves, which means that inputting the correct code into your combination bicycle lock will be hard! You realize that because of your gloves you can only turn \it{exactly} \bf{2} dials at once. You bite the bullet this time, sacrificing your bare hands to the bitter cold. But as you step in the 037 lecture hall you keep wondering, was it possible to unlock the lock without undoing your gloves? And if yes, how many dial turns would you have needed?
 
 \begin{itemize}
 \item A dial always contains 10 numbers, 0 to 9. It rotates in such a way that 0 and 9 are adjacent.

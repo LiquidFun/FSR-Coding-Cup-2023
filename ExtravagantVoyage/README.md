@@ -14,7 +14,7 @@ The first line contains 2 integers $n$ ($1 <= n <= 1000$), the number of items a
 
 The second line contains $n$ integers $v_i$ ($1 <= v_i <= 1000$), the volume of the $i$-ith item in millilitres.
 
-The third line contains $n$ integers $s_i$ ($1 <= s_i <= 100$), the score of the $i$-ith item (how many hours it makes your family happy).
+The third line contains $n$ integers $s_i$ ($1 <= s_i <= 100$), the score of the $i$-ith item (how many hours it makes your mother happy).
 
 ## Output format
 

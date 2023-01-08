@@ -6,7 +6,7 @@ You are again on the hunt for the best programming language there is, this time,
 
 ## Input format
 
-The first line contains an integer $n$ ($1 <= n <= 50$), the number of book titles on the shelf. Then $n$ lines follow, each containing a title of a book on that shelf. Each book title will have between 1 and 100 characters (1 and 100 included). Each character will be one of \t{a-z}, \t{A-Z} or \t{:' } (the last one is a space-character). Note that the newline character \textbackslash\t{n} is not included in the 100 character limit.
+The first line contains an integer $n$ ($1 <= n <= 50$), the number of book titles on the shelf. Then $n$ lines follow, each containing a title of a book on that shelf. Each book title will have between 1 and 100 characters (1 and 100 included). Each character will be one of \t{a-z}, \t{A-Z}, \t{:'} (colon or a single qoute) or a space.
 
 ## Output format
 

@@ -8,6 +8,11 @@ It is too late to listen now, you note to yourself, this is now a question of ut
 
 You are given a grid representing a 2D aquarium, each character represents 1 litre of volume. You may add water to it using any of the air parts in the first row of the aquarium. The water added in such a way, will then either flow left, right, or down in the aquarium (it will not move up into air-pockets). What is the maximum number of litres you can add to the aquarium by filling it with any of the air openings in the first row?
 
+\begin{center}
+  \includegraphics{sample2.png} \\
+  \small{Solution for sample 2}
+\end{center}
+
 ## Input format
 
 The first line contains 2 numbers, $r$ the number of rows ($3 <= r <= 100$), and $c$ the number of columns ($3 <= c <= 200$) in the aquarium.
