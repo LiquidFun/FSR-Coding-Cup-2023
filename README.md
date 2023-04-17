@@ -1,9 +1,20 @@
 # FSR Coding Cup 2023 Problems
 
+* **Contest**: https://codeforces.com/group/18t0uBAFk1/contest/412995
+* **Final Standings**: https://codeforces.com/group/18t0uBAFk1/contest/412995/standings
+* **Solution Slides**: https://github.com/LiquidFun/FSR-Coding-Cup-2023/blob/main/slides/solutions.pdf
+* **Announcement**: https://fsr-inf.uni-rostock.de/de/blog/2022/11/fsr-coding-cup-2023/
+* **Basic Guide**: https://fsr-inf.uni-rostock.de/en/blog/2022/11/guide-fsr-coding-cup-2023/
 
-## List of possible problem ideas
+This was a competitive programming contest organized locally for students at the University of Rostock. 
+The contest was 4 hours long, it used mostly ICPC rules, with teams of 1 to 3 people but included unlimited use of online resources.
+It was and still is hosted on codeforces, use the link above. The problems can still be submitted unofficially. 
 
-[A✔️ | B✔️ | C✔️ | D✔️ | E✔️ | F✔️ | G✔️ | H✔️ | I✔️ | J✔️ | K✔️ | L✔️]
+All problems were created by me, in the following section I used to track the progress of each as well as some basic stats about difficulty and solution ideas.
+
+## List of problems
+
+[[A](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/A)✔️ | [B](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/B)✔️ | [C](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/C)✔️ | [D](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/D)✔️ | [E](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/E)✔️ | [F](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/F)✔️ | [G](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/G)✔️ | [H](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/H)✔️ | [I](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/I)✔️ | [J](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/J)✔️ | [K](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/K)✔️ | [L](https://codeforces.com/group/18t0uBAFk1/contest/412995/problem/L)✔️]
 
 Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is completed
 
@@ -67,7 +78,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 
 
 <details> 
-  <summary>[DONE] Going Home | _Train Scheduling_ (click me!)</summary>
+  <summary>[DONE] Going Home | _Before: Train Scheduling_ (click me!)</summary>
 
   * *Preliminary problem idea*: you are in Rostock, but tomorrow you want to be at home! So you decide to go with deutsche bahn, however you see that their planning system is not working. So you take the matters in your own hands. You take all routes in the system and create your own timetable and routing. Of course the deutsche bahn trains may have some delay. Given the routes for the day and the maximum delay for each train, print the earliest possible time for arrival, and the latest possible time
   * *Difficulty*: 5/10
@@ -105,7 +116,7 @@ Legend: 💡 - idea is completed, ❓ - no idea yet, ✔️ - problem is complet
 
 
 <details> 
-  <summary>[DONE; needs other solvers] Keyboard Robot (click me!)</summary>
+  <summary>[DONE] Keyboard Robot (click me!)</summary>
 
   * *Preliminary problem idea*: you are given a 6x6 keyboard layout and a list of words. You are building a robot with 2 separately movable fingers which can type letters on that keyboard. The fingers can only move along the grid, not diagonally, but they can move at the same time. Each movement costs 1 second, what is the minimal number seconds required to type all words correctly?
   * *Difficulty*: 6/10
